@@ -1,4 +1,141 @@
-.App {
+
+/* colores: */
+
+:root {
+  --black: #000000;
+  --dark-brown: #630000;
+  --makeup: #D8B6A4;
+  --bone: #EEEBDD;
+  
+}
+
+/* Fuentes linkadas (tambien en el html en el head): */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilos para la navbar: */
+
+.navbar {
+  background-color: var(--black);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.burger, .navbar a {
+  color: var(--bone);
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.navbarmenu {
+  display: none;
+}
+
+.active {
+  background-color: var(--makeup);
+  border-radius: 5px;  
+}
+
+
+/* estilos para el header: */
+
+.header {
+  height: 100px;
+  background-color: var(--dark-brown);
+  color: var(--bone);
+  margin: 0;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* estilos para la pagina de login: */
+
+.loginpage {
+  display: flex;
+  /* width: 80%; */
+  justify-content: center;
+}
+
+.loginform,
+.newaccount {
+  /* flex-grow: 1; */
+  background-color: var(--diveboxbg);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.loginform h3,
+.newaccount h3 {
+  margin-top: 0px;
+}
+
+.loginform > form div {
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+.loginform input {
+  display: block;
+  border: solid 1px grey;
+  border-radius: 5px;
+  margin-top: 5px;
+  height: 25px;
+  width: 200px;
+}
+
+.loginform button,
+.newaccount button {
+  border: solid 1px grey;
+  border-radius: 5px;
+  font-size: large;
+  background-color: var(--diveblue);
+  color: var(--divewhite);
+  cursor: pointer;
+}
+
+.loginform button:hover,
+.newaccount button:hover {
+  background-color: var(--divelightblue);
+} 
+
+
+
+
+/* Media query tablet */
+
+@media only screen and (min-width: 640px) { 
+  .navlinks {
+    display: inline;    
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+}
+
+/* Media query escritorio */
+
+@media only screen and (min-width: 1024px) { 
+
+}
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -36,3 +173,4 @@
     transform: rotate(360deg);
   }
 }
+ */
