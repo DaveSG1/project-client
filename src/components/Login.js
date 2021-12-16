@@ -13,7 +13,7 @@ export default function Login() {
         <>
             <div className="logincomponent">
                 <div className="loginform">
-                    <h3>Registered customers</h3>
+                    <h3>Acceso usuarios </h3>
                     <form action="#" method="GET">
 
                         <div>
@@ -25,15 +25,15 @@ export default function Login() {
                             <input type="password" name="userPassword" id="userPassword" required />
                         </div>
                         <div>
-                            <button type="submit">Sign In</button>
+                            <button type="submit">Iniciar sesión</button>
                         </div>
 
                     </form>
                 </div>
 
                 <div className="newaccount">
-                    <h3>New customers</h3>
-                    <button onClick={handleRegister}>Create an account</button>
+                    <h3>Nuevo usuario</h3>
+                    <button onClick={handleRegister}>Crear una cuenta</button>
                 </div>
             </div>
         </>
