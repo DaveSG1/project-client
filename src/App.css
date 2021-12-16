@@ -47,7 +47,7 @@ body {
 
 /* estilos para el header: */
 
-.header {
+#header {
   height: 100px;
   background-color: var(--dark-brown);
   color: var(--bone);
@@ -60,16 +60,17 @@ body {
 
 /* estilos para la pagina de login: */
 
-.loginpage {
+.logincomponent {
   display: flex;
-  /* width: 80%; */
+  flex-direction: column;
   justify-content: center;
 }
 
+.registerform,
 .loginform,
 .newaccount {
-  /* flex-grow: 1; */
-  background-color: var(--diveboxbg);
+
+  background-color: var(--makeup);
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
@@ -110,17 +111,38 @@ body {
 } 
 
 
-/* Estilos para el footer: */
-
-.footer {
-  background-color: var(--black);
-  color: var(--bone);
-  height: 50px;
-  display: flex;
+.logincomponent {
+  display:flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
+
+
+
+/* Estilos para el footer: */
+
+#footer {
+  background-color: var(--black);
+  color: var(--bone);
+  text-align: center;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+  
+}
+
+
+.pagecontainer {
+  position: relative;
+  min-height: 100vh;
+}
+
+.contentwrap {
+  padding-bottom: 75px; /* footer height */
+}
 
 
 

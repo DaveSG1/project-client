@@ -5,9 +5,12 @@ import Footer from '../components/Footer'
 
 export default function LoginPage() {
     return (
-        <div>
-            <Header />
-            <Login />
+        <div className="pagecontainer">
+
+            <div className="contentwrap">
+                <Header />
+                <Login />
+            </div>
             <Footer />
         </div>
     )
