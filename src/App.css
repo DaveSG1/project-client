@@ -110,6 +110,18 @@ body {
 } 
 
 
+/* Estilos para el footer: */
+
+.footer {
+  background-color: var(--black);
+  color: var(--bone);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 
 /* Media query tablet */
