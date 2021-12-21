@@ -11,7 +11,7 @@ export default function Navbar() {
 
                 <div className="navlinks">
                     <NavLink to="/" activeClassName="active" exact={true}>Inicio</NavLink>
-                    <NavLink to="/ubicaciones" activeClassName="active">Ubicaciones</NavLink>
+                    <NavLink to="/Quienes somos" activeClassName="active">Quienes somos</NavLink>
                     <NavLink to="/rutas" activeClassName="active">Rutas</NavLink>
                     <NavLink to="/reserva" activeClassName="active">Reserva</NavLink>
                 </div>
