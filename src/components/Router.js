@@ -1,23 +1,35 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Navbar from "./Navbar";
+import Header from "./Header";
+
+import IndexPage from "../pages/IndexPage";
 import LoginPage from "../pages/LoginPage";
 import RegisterPage from "../pages/RegisterPage"
-import IndexPage from "../pages/IndexPage";
+import RutasPage from "../pages/RutasPage";
+
+import Footer from "./Footer";
+
+
 
 
 export default function Router() {
     return (
-        <div>
-            <BrowserRouter>
-                <Navbar />
-                <Switch>
-                    <Route exact path="/" component={IndexPage} />
-                    <Route path="/login" component={LoginPage} />
-                    <Route path="/register" component={RegisterPage} />
+        <div className="pagecontainer">
+            <div className="contentwrap">
+                <BrowserRouter>
+                    <Navbar />
+                    <Header />
+                    <Switch>
+                        <Route exact path="/" component={IndexPage} />
+                        <Route path="/login" component={LoginPage} />
+                        <Route path="/register" component={RegisterPage} />
+                        <Route path="/rutas" component={RutasPage} />
 
-                </Switch>
-            </BrowserRouter>
+                    </Switch>
+                </BrowserRouter>
+            </div>
+            <Footer />
         </div>
     )
 }

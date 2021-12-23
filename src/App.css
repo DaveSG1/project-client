@@ -20,6 +20,20 @@ body {
  
 }
 
+/* Botones: */
+
+button {
+  border-radius: 5px;
+  background-color: var(--makeup);
+  color: var(--bone);
+  border: solid 1px var(--dark-brown);
+  font-size: large;  
+}
+
+button:hover {
+  background-color: var(--dark-brown);
+} 
+
 /* Estilos para la navbar: */
 
 .navbar {
@@ -49,10 +63,15 @@ body {
   border-radius: 5px;  
 }
 
+.navbar a:hover {
+  width: 75%;
+  border-bottom: var(--dark-brown) solid 4px;
+}
+
 
 /* estilos para el header: */
 
-#header {
+.header {
   height: 100px;
   background-color: var(--dark-brown);
   color: var(--bone);
@@ -71,8 +90,7 @@ body {
   justify-content: center;
 }
 
-.registerform,
-.loginform,
+
 .newaccount {
 
   background-color: var(--makeup);
@@ -104,34 +122,11 @@ body {
   width: 200px;
 }
 
-.loginform button,
-.newaccount button {
-  border: solid 1px grey;
-  border-radius: 5px;
-  font-size: large;
-  background-color: var(--diveblue);
-  color: var(--divewhite);
-  cursor: pointer;
-}
-
-.loginform button:hover,
-.newaccount button:hover {
-  background-color: var(--divelightblue);
-} 
-
-
-.logincomponent {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-
 
 
 /* Estilos para el footer: */
 
-#footer {
+.footer {
   background-color: var(--black);
   color: var(--bone);
   text-align: center;
@@ -150,7 +145,7 @@ body {
 }
 
 .contentwrap {
-  padding-bottom: 75px; /* footer height */
+  padding-bottom: 75px; 
 }
 
 
@@ -158,6 +153,11 @@ body {
 /* Media query tablet */
 
 @media only screen and (min-width: 640px) { 
+
+  .logincomponent {
+    flex-direction: row;
+  }
+  
   .navlinks {
     display: inline;    
   }
