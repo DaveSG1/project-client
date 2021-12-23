@@ -3,7 +3,10 @@ import React from "react"
 export default function Header() {
     return (
         <div className="header">
-            <p>Freedom ride</p>
+            <img src="https://pbs.twimg.com/media/Ea-bmSZXQAAWjFd.jpg" alt="" width="100"
+                height="100" />
+            <p> Freedom ride
+            </p>
         </div>
     )
 }

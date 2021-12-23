@@ -5,6 +5,8 @@
   --black: #000000;
   --dark-brown: #630000;
   --makeup: #D8B6A4;
+  --sand: #c2b280;
+  --beige: #F5F5DC;
   --bone: #EEEBDD;
   
 }
@@ -28,6 +30,7 @@ button {
   color: var(--bone);
   border: solid 1px var(--dark-brown);
   font-size: large;  
+  font-family: 'Open Sans', sans-serif;
 }
 
 button:hover {
@@ -37,7 +40,7 @@ button:hover {
 /* Estilos para la navbar: */
 
 .navbar {
-  background-color: var(--black);
+  background-color: var(--dark-brown);
   height: 40px;
   display: flex;
   align-items: center;
@@ -46,7 +49,15 @@ button:hover {
   padding-right: 10px;
 }
 
-.burger, .navbar a {
+.navbar a {
+  color: var(--bone);
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.burger{                       /*  NO FUNCIONA, NO APARECE EN TAMAÑOS PEQUEÑOS */
   color: var(--bone);
   text-decoration: none;
   margin-left: 5px;
@@ -73,7 +84,7 @@ button:hover {
 
 .header {
   height: 100px;
-  background-color: var(--dark-brown);
+  background-color: var(--black);
   color: var(--bone);
   margin: 0;
   padding-left: 30px;
@@ -93,7 +104,8 @@ button:hover {
 
 .newaccount {
 
-  background-color: var(--makeup);
+  background-color: var(--black);
+  color: var(--bone);
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
