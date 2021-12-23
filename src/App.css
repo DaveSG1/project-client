@@ -57,7 +57,7 @@ button:hover {
   padding: 5px;
 }
 
-.burger{                       /*  NO FUNCIONA, NO APARECE EN TAMAÑOS PEQUEÑOS */
+.navbar .burger{                       /*  NO FUNCIONA, NO APARECE EN TAMAÑOS PEQUEÑOS */
   color: var(--bone);
   text-decoration: none;
   margin-left: 5px;
@@ -95,29 +95,20 @@ button:hover {
 
 /* estilos para la pagina de login: */
 
-.logincomponent {
+.logincomponent,
+.registercomponent {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-
-.newaccount {
-
-  background-color: var(--black);
-  color: var(--bone);
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
+
 
 .loginform h3,
-.newaccount h3 {
+.registercomponent h3 {
   margin-top: 0px;
+  margin-left: 10px;
+  text-align: center;
 }
 
 .loginform > form div {
@@ -132,6 +123,57 @@ button:hover {
   margin-top: 5px;
   height: 25px;
   width: 200px;
+}
+
+.newaccount {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  background-color: var(--black);
+  color: var(--bone);
+  
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;  
+}
+
+.loginform form,
+.registercomponent form {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    
+    margin-top: 25px;  
+
+}
+
+.registercomponent,
+.registercomponent form{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.registercomponent input {
+  display: block;
+  border: solid 1px grey;
+  border-radius: 5px;
+  margin-top: 5px;
+  height: 25px;
+  width: 200px;
+}
+
+.registercomponent form button {
+  margin-top: 20px;
+  width: 120px;
 }
 
 
@@ -166,9 +208,9 @@ button:hover {
 
 @media only screen and (min-width: 640px) { 
 
-  .logincomponent {
+/*   .logincomponent {
     flex-direction: row;
-  }
+  } */
   
   .navlinks {
     display: inline;    

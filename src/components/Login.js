@@ -32,7 +32,7 @@ export default function Login() {
                 </div>
 
                 <div className="newaccount">
-                    <h3>Nuevo usuario</h3>
+                    <h4>Nuevo usuario</h4>
                     <button onClick={handleRegister}>Crear una cuenta</button>
                 </div>
             </div>

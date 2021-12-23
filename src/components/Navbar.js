@@ -11,7 +11,7 @@ export default function Navbar() {
 
                 <div className="navlinks">
                     <NavLink to="/" activeClassName="active" exact={true}>Inicio</NavLink>
-                    <NavLink to="/quienessomos" activeClassName="active">Quienes somos</NavLink>
+                    <NavLink to="/empresa" activeClassName="active">Empresa</NavLink>
                     <NavLink to="/rutas" activeClassName="active">Rutas</NavLink>
                     <NavLink to="/reservas" activeClassName="active">Reservas</NavLink>
                 </div>
@@ -19,7 +19,7 @@ export default function Navbar() {
                 <div className="navlogin">
                     <NavLink to="/login">
                         <i className="fas fa-user fa-lg"></i>
-                        <span>Acceso usuarios</span>
+                        <span>Entrar</span>
                     </NavLink>
                 </div>
 
