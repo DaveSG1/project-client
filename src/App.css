@@ -19,15 +19,89 @@ body {
 
 
 * {  box-sizing: border-box;
+  text-align: center;
  
 }
+
+/* Página empresa */
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--bone); */
+}
+
+.heading .mainImage {
+  width: 100vw;
+  height: 45vw;
+  
+}
+
+.heading .text {
+  margin: 5px;
+}
+
+.roundedImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    /* background-color: var(--bone); */
+}
+
+.roundedBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.rounded {
+  height: 20vh;
+  width: 20vh;
+  margin: 1.5rem;
+  border-radius: 50%; 
+
+}
+
+.roundedBox p{
+  margin-inline: 1rem;
+}
+
+
+
+.heading .buscarRutas {
+  
+ color: var(--dark-brown);
+ margin-top: 2rem;
+ font-size: 2rem;
+ 
+}
+
+
+/* Pagina error */
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--makeup);
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
 
 /* Botones: */
 
 button {
   border-radius: 5px;
   background-color: var(--makeup);
-  color: var(--bone);
+  color: white;
   border: solid 1px var(--dark-brown);
   font-size: large;  
   font-family: 'Open Sans', sans-serif;
@@ -37,7 +111,7 @@ button:hover {
   background-color: var(--dark-brown);
 } 
 
-/* Estilos para la navbar: */
+/* Navbar: */
 
 .navbar {
   background-color: var(--dark-brown);
@@ -50,7 +124,7 @@ button:hover {
 }
 
 .navbar a {
-  color: var(--bone);
+  color: white;
   text-decoration: none;
   margin-left: 5px;
   margin-right: 5px;
@@ -58,7 +132,7 @@ button:hover {
 }
 
 .navbar .burger{                       /*  NO FUNCIONA, NO APARECE EN TAMAÑOS PEQUEÑOS */
-  color: var(--bone);
+  color: white;
   text-decoration: none;
   margin-left: 5px;
   margin-right: 5px;
@@ -80,12 +154,12 @@ button:hover {
 }
 
 
-/* estilos para el header: */
+/* Header: */
 
 .header {
   height: 100px;
   background-color: var(--black);
-  color: var(--bone);
+  color: white;
   margin: 0;
   padding-left: 30px;
   display: flex;
@@ -93,7 +167,8 @@ button:hover {
   justify-content: center;
 }
 
-/* estilos para la pagina de login: */
+
+/* Página de login: */
 
 .logincomponent,
 .registercomponent {
@@ -133,7 +208,7 @@ button:hover {
   justify-content: flex-start;
 
   background-color: var(--black);
-  color: var(--bone);
+  color: white;
   
   border-radius: 10px;
   padding: 10px;
@@ -177,92 +252,21 @@ button:hover {
 }
 
 
-/* Pagina empresa */
-
-.heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.heading .mainImage {
-  width: 100vw;
-  height: 300px;
-  
-}
-
-.heading .text {
-  margin: 5px;
-}
-
-.roundedImages {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.roundedBox {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.rounded {
-  height: 15vh;
-  width: 15vh;
-  margin: 1.5rem;
-  border-radius: 50%; 
-
-}
-
-.roundedBox p{
-  margin-left: 1rem;
-}
 
 
 
-.heading .buscarRutas {
-  
- color: var(--dark-brown);
- margin-top: 2rem;
- 
-}
-
-
-
-
-/* Pagina error */
-
-.error {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--makeup);
-  border: 1px solid var(--black);
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
-}
-
-
-
-/* Estilos para el footer: */
+/* Footer: */
 
 .footer {
   background-color: var(--black);
-  color: var(--bone);
+  color: white ;
   text-align: center;
   height: 50px;
   position: absolute;
   bottom: 0;
-  width: 100%;
-  
+  width: 100%;  
   
 }
-
 
 .pagecontainer {
   position: relative;
@@ -271,6 +275,7 @@ button:hover {
 
 .contentwrap {
   padding-bottom: 75px; 
+  /* background-color: var(--bone); */
 }
 
 
@@ -291,62 +296,8 @@ button:hover {
     display: none;
   }
 
-  /* Pagina empresa */
-
-.heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.heading .mainImage {
-  width: 100vw;
-  height: 300px;
-  
-}
-
-.heading .text {
-  margin: 5px;
-}
-
-.roundedImages {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.rounded {
-  height: 30vh;
-  width: 30vh;
-  margin: 1.5rem;
-  border-radius: 50%; 
 
 }
-
-.roundedBox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.roundedBox p{
-  margin-left: 1rem;
-}
-
-
-
-.heading .buscarRutas {
-  
- color: var(--dark-brown);
- margin-top: 2rem;
- 
-}
-
-}
-
 
 
 /* Media query escritorio */
@@ -375,9 +326,9 @@ button:hover {
 .roundedImages {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-}
+ }
 
 .rounded {
   height: 30vh;
@@ -392,6 +343,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 33%;
 }
 
 .roundedBox p{

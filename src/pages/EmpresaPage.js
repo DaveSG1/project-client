@@ -18,25 +18,23 @@ export default function EmpresaPage() {
 
                 <div className="roundedImages">
                     <div className="roundedBox">
-                        <img className="rounded" src="https://elegirhoy.com/uploads/fichas-eventos-imagenes/ruta-nocturna.jpg" alt="" />
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vel ut esse perspiciatis perferendis recusandae, animi necessitatibus </p>
+                        <img className="rounded" src="https://perfectvenue.es/wp-content/uploads/2018/04/horse-riding-route-in-mallorca-2.jpg?v=162610863" alt="" />
+                        <p>Hemos seleccionado las mejores y más espectaculares rutas a caballo disponibles en España para que el cliente no se tenga que preocupar de nada, solamente de disfrutar de la experiencia.</p>
                     </div>
                     <div className="roundedBox">
-                        <img className="rounded" src="https://elegirhoy.com/uploads/fichas-eventos-imagenes/ruta-nocturna.jpg" alt="" />
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vel ut esse perspiciatis perferendis recusandae, animi necessitatibus </p>
+                        <img className="rounded" src="https://perfectvenue.es/wp-content/uploads/2018/04/horse-riding-route-in-mallorca.jpg?v=1626108637" alt="" />
+                        <p>Nuestros guías son profesionales nativos de cada región, con lo que, además de garantizar rutas 100% seguras, explican ampliamente los parajes por los que transcurre cada ruta.</p>
                     </div>
+
                     <div className="roundedBox">
-                        <img className="rounded" src="https://elegirhoy.com/uploads/fichas-eventos-imagenes/ruta-nocturna.jpg" alt="" />
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem vel ut esse perspiciatis perferendis recusandae, animi necessitatibus </p>
+                        <img className="rounded" src="https://d2jhl5pzkfi24b.cloudfront.net/article_image/0001/02/1d5c3bd87cc5d063dbe8a69e86fb22681bd9db0b.jpeg" alt="./" />
+                        <p> El cuidado de los caballos es nuestra prioridad, por lo que, aparte de criarlos en entornos ideales, nos aseguramos de que en ningún momento realicen sobreesfuerzos y así disfrutemos todos de la experiencia, ya que sin ellos no sería posible.</p>
                     </div>
                 </div>
 
+
                 <a className="buscarRutas" href="pages/RutasPage.js"> Buscar Rutas</a>
             </div>
-
-
-
-
 
 
         </div>

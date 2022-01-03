@@ -5,8 +5,7 @@ export default function Header() {
         <div className="header">
             <img src="https://pbs.twimg.com/media/Ea-bmSZXQAAWjFd.jpg" alt="" width="100"
                 height="100" />
-            <p> Freedom ride
-            </p>
+            <h1> Freedom ride</h1>
         </div>
     )
 }
