@@ -7,11 +7,13 @@ import IndexPage from "../pages/IndexPage";
 import LoginPage from "../pages/LoginPage";
 import RegisterPage from "../pages/RegisterPage"
 import RutasPage from "../pages/RutasPage";
+import ReservasPage from "../pages/ReservasPage"
 
 import ErrorPage from "../pages/ErrorPage"
 
 
 import Footer from "./Footer";
+import EmpresaPage from "../pages/EmpresaPage";
 
 
 
@@ -25,9 +27,13 @@ export default function Router() {
                     <Header />
                     <Switch>
                         <Route exact path="/" component={IndexPage} />
+
+                        <Route path="/empresa" component={EmpresaPage} />
+                        <Route path="/rutas" component={RutasPage} />
+                        <Route path="/reservas" component={ReservasPage} />
+
                         <Route path="/login" component={LoginPage} />
                         <Route path="/register" component={RegisterPage} />
-                        <Route path="/rutas" component={RutasPage} />
 
                         <Route component={ErrorPage} />
 
