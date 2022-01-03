@@ -8,6 +8,9 @@ import LoginPage from "../pages/LoginPage";
 import RegisterPage from "../pages/RegisterPage"
 import RutasPage from "../pages/RutasPage";
 
+import ErrorPage from "../pages/ErrorPage"
+
+
 import Footer from "./Footer";
 
 
@@ -25,6 +28,8 @@ export default function Router() {
                         <Route path="/login" component={LoginPage} />
                         <Route path="/register" component={RegisterPage} />
                         <Route path="/rutas" component={RutasPage} />
+
+                        <Route component={ErrorPage} />
 
                     </Switch>
                 </BrowserRouter>
