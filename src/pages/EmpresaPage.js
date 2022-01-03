@@ -1,12 +1,19 @@
 import React from 'react'
+import { useHistory } from 'react-router'
 /* import  from '../components/ ' */
 
 export default function EmpresaPage() {
+
+
+    const history = useHistory();
+
+    function handleClick(e) {
+        history.push("/rutas")
+    }
+
+
     return (
         <div>
-
-
-
 
             <div className="heading">
 
@@ -33,7 +40,7 @@ export default function EmpresaPage() {
                 </div>
 
 
-                <a className="buscarRutas" href="pages/RutasPage.js"> Buscar Rutas</a>
+                <button onClick={(e) => handleClick(e)}>Buscar rutas</button>
             </div>
 
 
