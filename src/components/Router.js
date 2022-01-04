@@ -9,6 +9,8 @@ import RegisterPage from "../pages/RegisterPage"
 import RutasPage from "../pages/RutasPage";
 import ReservasPage from "../pages/ReservasPage"
 
+import FichaPage from "../pages/FichaPage"
+
 import ErrorPage from "../pages/ErrorPage"
 
 
@@ -31,6 +33,8 @@ export default function Router() {
                         <Route path="/empresa" component={EmpresaPage} />
                         <Route path="/rutas" component={RutasPage} />
                         <Route path="/reservas" component={ReservasPage} />
+
+                        <Route path="/ficha" component={FichaPage} />
 
                         <Route path="/login" component={LoginPage} />
                         <Route path="/register" component={RegisterPage} />

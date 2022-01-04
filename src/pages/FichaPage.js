@@ -1,11 +1,10 @@
 import React from 'react'
 import { useState } from 'react';
 import { useEffect } from "react";
+import Ficha from '../components/Ficha';
 
 
-import Ruta from '../components/Ruta'
-
-export default function RutasPage() {
+export default function FichaPage() {
 
 
     const [rutas, setRutas] = useState([]);
@@ -26,7 +25,7 @@ export default function RutasPage() {
             {rutas.map(ruta => {
                 return (
                     <div className="BrowserCardStyle">
-                        <Ruta ruta={ruta} />
+                        <Ficha ruta={ruta} />
                     </div>)
             })}
         </div>
