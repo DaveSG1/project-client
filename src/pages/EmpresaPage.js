@@ -17,7 +17,7 @@ export default function EmpresaPage() {
 
             <div className="heading">
 
-                <img className="mainImage" src="https://elegirhoy.com/uploads/fichas-eventos-imagenes/ruta-nocturna.jpg" alt="" />
+                <img className="mainImage" src="imagenes/fotoinicio.jpg" alt="" />
                 <div className="text">
                     <h2 className="">Rutas exclusivas a caballo por toda España</h2>
                     <span className="">Somos una web dedicada al turismo activo. Nuestra principal actividad son las rutas a caballo por España, aptas para cualquier persona y edad, con el fin de ofrecer sensaciones únicas y momentos inolvidables a nuestros clientes.</span>
