@@ -27,7 +27,7 @@ body {
  
 }
 
-/* Página empresa */
+/* Página Index: */
 
 .heading {
   display: flex;
@@ -85,6 +85,77 @@ body {
  
 }
 
+
+/* Página Empresa: */
+
+.headingEmpresa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--bone); */
+}
+
+.headingEmpresa .mainImageEmpresa {
+  width: 95vw;
+  height: 45vw;
+  border-radius: 5px;
+}
+
+.headingEmpresa .text {
+  margin: 5px;
+  text-align:justify;
+}
+
+.squaredImages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    /* background-color: var(--bone); */
+}
+
+.squaredBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.squared {
+  height: 20vh;
+  width: 20vh;
+  margin: 1.5rem;
+  border-radius: 20px;
+}
+
+.squaredBox p{
+  margin-inline: 1rem;
+}
+
+
+
+.heading .buscarRutas {
+  
+ color: var(--dark-brown);
+ margin-top: 2rem;
+ font-size: 2rem;
+ 
+}
+
+.moreInfoEmpresa {
+text-align: left;
+
+} 
+
+.moreInfoEmpresa div p{
+  text-align:justify;
+  margin-inline: 1.5rem;
+}
+
+
+
 /* Página RutasPage: */
 
 .BrowserCardStyle {
@@ -122,6 +193,11 @@ body {
 .ruta button:hover {
   background-color: var(--makeup);
 }
+
+
+/* Página Reservas: */
+
+
 
 
 /* Pagina error */
@@ -210,7 +286,7 @@ button:hover {
 }
 
 
-/* Página de login: */
+/* Página de Login (Entrar): */
 
 .logincomponent,
 .registercomponent {
@@ -346,7 +422,7 @@ button:hover {
 
 @media only screen and (min-width: 1024px) { 
 
-  /* Pagina empresa */
+  /* Pagina Inicio: */
 
 .heading {
   display: flex;
@@ -405,6 +481,85 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
 } */
+
+
+/* Pagina Empresa: */
+
+.headingEmpresa {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-inline: 20vw;
+}
+
+.headingEmpresa .mainImageEmpresa {
+  width: 50%;
+  height: 700px;
+  margin: 2rem;
+  border-radius: 5px;  
+}
+
+.headingEmpresa .text {
+
+  width: 50%;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.headingEmpresa .text h2 {  
+  margin-bottom: 5rem; 
+}
+
+.headingEmpresa .text span {  
+  line-height: 3rem;
+}
+
+.squaredImages {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+ }
+
+.squared {
+  height: 30vh;
+  width: 70vh;
+  margin: 1.5rem;
+  border-radius: 20px;
+}
+
+.squaredBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+}
+
+.squaredBox p{
+  margin-left: 1rem;
+}
+
+
+
+.heading .buscarRutas {
+  
+ color: var(--dark-brown);
+ margin-top: 2rem;
+ 
+}
+
+.moreInfoEmpresa div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.moreInfoEmpresa div p {
+  width: 50%;
+}
 
 
 }
