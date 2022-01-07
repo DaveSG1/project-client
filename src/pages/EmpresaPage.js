@@ -26,7 +26,7 @@ export default function EmpresaPage() {
                         Asimismo, coordinamos todo el proceso de reserva de la ruta elegida, únicamente contáctanos, del resto nos encargamos nosotros.</span>
                 </div>
 
-                <img className="mainImageEmpresa" src="imagenes/fotoinicio.jpg" alt="" />
+                <img className="mainImageEmpresa" src="https://images.unsplash.com/photo-1605264522799-1996bdbe5f72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG9yc2UlMjByaWRpbmd8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" />
 
             </div>
 
@@ -35,18 +35,18 @@ export default function EmpresaPage() {
             <div className="squaredImages">
                 <div className="squaredBox">
                     <p>Proporcionamos todo todo el equipo necesario para disfrutar con comodidad y seguridad de la salida.</p>
-                    <img className="squared" src="https://perfectvenue.es/wp-content/uploads/2018/04/horse-riding-route-in-mallorca-2.jpg?v=162610863" alt="" />
+                    <img className="squared" src="https://images.unsplash.com/photo-1555447421-52e8d51a1ea3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGhvcnNlJTIwcmlkaW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" />
 
                 </div>
                 <div className="squaredBox">
                     <p>Grupos reducidos para ofrecer una atención personalizada, adaptándonos a vuestro nivel.</p>
-                    <img className="squared" src="https://perfectvenue.es/wp-content/uploads/2018/04/horse-riding-route-in-mallorca.jpg?v=1626108637" alt="" />
+                    <img className="squared" src="https://images.unsplash.com/photo-1445235245954-c022e1e35eb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvcnNlJTIwcmlkaW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" />
 
                 </div>
 
                 <div className="squaredBox">
                     <p> Todas nuestras rutas están cubiertas por los seguros de Responsabilidad Civil y de Asistencia en Viaje según la normativa vigente.</p>
-                    <img className="squared" src="https://d2jhl5pzkfi24b.cloudfront.net/article_image/0001/02/1d5c3bd87cc5d063dbe8a69e86fb22681bd9db0b.jpeg" alt="./" />
+                    <img className="squared" src="https://images.unsplash.com/photo-1579037640797-f5ddded4f30d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGhvcnNlJTIwcmlkaW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="./" />
 
                 </div>
             </div>
