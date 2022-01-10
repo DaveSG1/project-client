@@ -35,7 +35,7 @@ export default function EmpresaPage() {
 
                     <div className="roundedBox">
                         <img className="rounded" src="https://d2jhl5pzkfi24b.cloudfront.net/article_image/0001/02/1d5c3bd87cc5d063dbe8a69e86fb22681bd9db0b.jpeg" alt="./" />
-                        <p> El cuidado de los caballos es nuestra prioridad, por lo que, aparte de criarlos en entornos ideales, nos aseguramos de que en ningún momento realicen sobreesfuerzos y así disfrutemos todos de la experiencia, ya que sin ellos no sería posible.</p>
+                        <p> El cuidado de los caballos es nuestra prioridad, por lo que nos aseguramos de que en ningún momento realicen sobreesfuerzos y así disfrutemos todos de la experiencia, ya que sin ellos no sería posible.</p>
                     </div>
                 </div>
 
