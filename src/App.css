@@ -197,8 +197,43 @@ text-align: left;
 
 /* Página Reservas: */
 
+.reservas form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  width: fit-content;
+  margin: auto;
+  background-color: var(--makeup);
+  color: var(--black);
+  padding: 10px;
+  border-radius: 10px;
+  padding: 10px; 
+}
 
+.reservas form input {
+  width: 80vw;
+  height: 2rem;
+  margin-block: 1rem;
+  border-radius: 5px;
+}
 
+.reservas form textarea {
+  width: 80vw;
+  height: 6rem;
+  margin-block: 1rem;
+  border-radius: 5px;
+}
+
+.reservas button {
+  margin-top: 1rem;
+  background-color: var(--dark-brown); 
+  color: var(--bone); 
+}
+
+.reservas button:hover {
+  background-color: var(--makeup);
+}
 
 /* Pagina error */
 
@@ -560,6 +595,22 @@ button:hover {
 
 .moreInfoEmpresa div p {
   width: 50%;
+}
+
+/* Página reservas: */
+
+.reservas form input {
+  width: 40vw;
+  height: 2rem;
+  margin-block: 1rem;
+  border-radius: 5px;
+}
+
+.reservas form textarea {
+  width: 40vw;
+  height: 6rem;
+  margin-block: 1rem;
+  border-radius: 5px;
 }
 
 

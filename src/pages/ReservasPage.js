@@ -1,13 +1,13 @@
 import React from 'react'
-/* import  from '../components/ ' */
+/* import { useState, useEffect } from 'react';
+ */
+import Reservas from '../components/Reservas'
 
-export default function ReservasPage() {
+export default function RutasPage() {
+
     return (
-        <div>
+        <div className="reservasPage">
+            <Reservas />
+        </div>)
 
-            Reservas
-
-
-        </div>
-    )
 }
