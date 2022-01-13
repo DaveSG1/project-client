@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import Reservas from '../components/Reservas';
 
 import Ruta from '../components/Ruta'
 

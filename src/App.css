@@ -98,7 +98,7 @@ body {
 
 .headingEmpresa .mainImageEmpresa {
   width: 95vw;
-  height: 45vw;
+  height: 45vh;
   border-radius: 5px;
 }
 
@@ -284,17 +284,6 @@ button:hover {
   padding: 5px;
 }
 
-.navbar .burger{                       /*  NO FUNCIONA, NO APARECE EN TAMAÑOS PEQUEÑOS */
-  color: white;
-  text-decoration: none;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 5px;
-}
-
-.navbarmenu {
-  display: none;
-}
 
 .active {
   background-color: var(--makeup);
@@ -612,6 +601,8 @@ button:hover {
   margin-block: 1rem;
   border-radius: 5px;
 }
+
+
 
 
 }
