@@ -30,7 +30,7 @@ export default function EmpresaPage() {
                     </div>
                     <div className="roundedBox">
                         <img className="rounded" src="https://perfectvenue.es/wp-content/uploads/2018/04/horse-riding-route-in-mallorca.jpg?v=1626108637" alt="" />
-                        <p>Nuestros guías son profesionales nativos de cada región, con lo que, además de garantizar rutas 100% seguras, explican ampliamente los parajes por los que transcurre cada ruta.</p>
+                        <p>Nuestros guías son profesionales nativos de cada región, con lo que, además de garantizar rutas 100% seguras, explican con todo detalle y en profundidad los parajes por los que transcurre cada ruta.</p>
                     </div>
 
                     <div className="roundedBox">

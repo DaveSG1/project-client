@@ -45,7 +45,7 @@ export default function EmpresaPage() {
                 </div>
 
                 <div className="squaredBox">
-                    <p> Todas nuestras rutas están cubiertas por los seguros de Responsabilidad Civil y de Asistencia en Viaje según la normativa vigente.</p>
+                    <p> Todas nuestras rutas están cubiertas por los seguros de Responsabilidad Civil y de Asistencia en Viaje requeridos.</p>
                     <img className="squared" src="https://images.unsplash.com/photo-1579037640797-f5ddded4f30d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGhvcnNlJTIwcmlkaW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="./" />
 
                 </div>
