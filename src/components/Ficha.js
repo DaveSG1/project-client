@@ -15,11 +15,11 @@ export default function Ficha({ ruta }) {
     return (
         <div className="ruta">
             <h2> {ruta.name} </h2>
+            <img src={ruta.photo} alt="" />
             <h3>{ruta.ccaa}</h3>
             <p>{ruta.location}</p>
-            <p>Teléfono: {ruta.telephone}</p>
-            <img src={ruta.image} alt="" />
-            <button onClick={(e) => handleClick(e)}>Reservar la ruta</button>
+
+            <button onClick={(e) => handleClick(e)}>Más información</button>
         </div>
     )
 }
