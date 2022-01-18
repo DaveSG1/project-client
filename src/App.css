@@ -305,8 +305,7 @@ button:hover {
   background-color: var(--black);
   color: white;
   margin: 0;
-  padding-left: 30px;
-  display: flex;
+    display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -325,13 +324,13 @@ button:hover {
 
 .loginform h3,
 .registercomponent h3 {
-  margin-top: 0px;
+  margin-top: 50px;
   margin-left: 10px;
   text-align: center;
 }
 
 .loginform > form div {
-  margin-top: 25px;
+  margin-top: 10px;
   margin-left: 10px;
 }
 
@@ -356,7 +355,11 @@ button:hover {
   
   border-radius: 10px;
   padding: 10px;
-  margin-top: 20px;  
+  margin-top: 30px;  
+}
+
+.newaccount h4 {
+  margin-top: 5px;
 }
 
 .loginform form,
@@ -424,13 +427,10 @@ button:hover {
 
 
 
-/* Media query tablet */
+/* Media query tablet 
 
 @media only screen and (min-width: 640px) { 
 
-/*   .logincomponent {
-    flex-direction: row;
-  } */
   
   .navlinks {
     display: inline;    
@@ -441,7 +441,7 @@ button:hover {
   }
 
 
-}
+} */
 
 
 /* Media query escritorio */
@@ -503,10 +503,34 @@ button:hover {
  
 }
 
-/* .BrowserCardStyle {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-} */
+
+/* Pagina Login: */
+
+.logincomponent,
+.registercomponent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.newaccount {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--black);
+  color: white;
+  
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 100px; 
+  margin-left: 50px; 
+  height: 100px;
+}
 
 
 /* Pagina Empresa: */

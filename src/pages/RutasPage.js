@@ -20,7 +20,7 @@ export default function RutasPage() {
 
 
     return (
-        <div>
+        <div className="GridRutas" >
             {rutas.map(ruta => {
                 return (
                     <div className="BrowserCardStyle">
