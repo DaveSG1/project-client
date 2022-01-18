@@ -4,7 +4,7 @@ export default function Register() {
 
     return (
         <div className="registercomponent">
-            <h3>Nuevo usuario:</h3>
+            <h3>Nuevo usuario</h3>
             <form action="#" className="registerform" method="POST">
 
                 <label htmlFor="newEmail">Email:</label>       {/* al ser for palabra reservada de js, para react hemos de usar htmlFor */}

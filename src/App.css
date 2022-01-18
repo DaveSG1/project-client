@@ -506,10 +506,17 @@ button:hover {
 
 /* Pagina Login: */
 
-.logincomponent,
-.registercomponent {
+.logincomponent{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.registercomponent{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 60px;
