@@ -9,7 +9,7 @@ export default function RutasPage() {
     const [rutas, setRutas] = useState([]);
 
 
-    let URL = "https://run.mocky.io/v3/085901a7-d2c6-4f22-8123-cb8fb7504288"
+    let URL = "https://run.mocky.io/v3/fd9d2731-666c-4efb-8871-1d14a7e8c38c"
 
     useEffect(() => {
         fetch(URL)
