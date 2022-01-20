@@ -1,33 +1,39 @@
-import React from 'react'
-import { useState } from 'react';
+import React, { useContext } from 'react'
 import { useEffect } from "react";
+import { GlobalContext } from '../App';
 import Ficha from '../components/Ficha';
 
 
 export default function FichaPage() {
 
+    const { rutas, idRuta } = useContext(GlobalContext);
+    // const [ficha, setFicha] = useState({});
 
-    const [rutas, setRutas] = useState([]);
+
+    const ficha = rutas.filter((ruta) => ruta.id === idRuta);
+    // setFicha(fichaFiltrada);
+
+    useEffect(() => {
+        console.log(ficha);
+
+    }, [ficha])
 
 
-    let URL = "https://run.mocky.io/v3/fd9d2731-666c-4efb-8871-1d14a7e8c38c"
+    /* let URL = "https://run.mocky.io/v3/fd9d2731-666c-4efb-8871-1d14a7e8c38c"
 
     useEffect(() => {
         fetch(URL)
             .then(r => r.json())
             .then(data => setRutas(data))
             ;
-    }, [URL])
+    }, [URL]) */
 
 
     return (
         <div>
-            {rutas.map(ruta => {
-                return (
-                    <div className="BrowserCardStyle">
-                        <Ficha ruta={ruta} />
-                    </div>)
-            })}
+            <div className="BrowserCardStyle">
+                <Ficha ficha={ficha} />
+            </div>
         </div>
     )
 }
