@@ -62,9 +62,9 @@ export default function EmpresaPage() {
                         • Dia completo (100€) (incluye picnic con bebida y almuerzo)</p>
                     <p>Los precios por persona incluyen:
                         • Caballos tranquilos y muy fiables.
-                        • Guia profesional.
-                        • Equipamiento completo.
-                        • Grupos reducidos para ofrecer una atención personalizada, adaptándonos a vuestro nivel.</p>
+                        • Guías profesionales.
+                        •Equipamiento completo.
+                        • Grupos reducidos para ofrecer una atención personalizada.</p>
                 </div>
             </div>
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 
+
 import Ruta from '../components/Ruta'
 
 export default function RutasPage() {
@@ -20,7 +21,8 @@ export default function RutasPage() {
 
 
     return (
-        <div className="GridRutas" >
+
+        <div className="gridRutas" >
             {rutas.map(ruta => {
                 return (
                     <div className="BrowserCardStyle">

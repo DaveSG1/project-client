@@ -5,8 +5,8 @@ export default function Ruta({ ruta }) {
 
     const history = useHistory();
 
-    function handleClick(e) {
-        history.push("/ficha")
+    function handleClick(id) {
+        history.push(`/ficha/${id}`)
     }
 
     return (
@@ -16,7 +16,7 @@ export default function Ruta({ ruta }) {
             <h3>{ruta.ccaa}</h3>
             <p>{ruta.location}</p>
 
-            <button onClick={(e) => handleClick(e)}>Más información</button>
+            <button onClick={(e) => handleClick(ruta.id)}>Más información</button>
         </div>
     )
 }

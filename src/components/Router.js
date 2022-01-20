@@ -34,7 +34,7 @@ export default function Router() {
                         <Route path="/rutas" component={RutasPage} />
                         <Route path="/reservas" component={ReservasPage} />
 
-                        <Route path="/ficha" component={FichaPage} />
+                        <Route path="/ficha/:id" component={FichaPage} />
 
                         <Route path="/login" component={LoginPage} />
                         <Route path="/register" component={RegisterPage} />

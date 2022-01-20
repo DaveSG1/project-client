@@ -621,6 +621,12 @@ button:hover {
 
 /* Página rutas: */
 
+.gridRutas {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 
 .ruta {
   display: flex;
