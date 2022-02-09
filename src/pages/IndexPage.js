@@ -1,12 +1,12 @@
-import React from "react"
-import Footer from "../components/Footer"
-import Index from "../components/Index"
+import React from "react";
+import Footer from "../components/Footer";
+import Index from "../components/Index";
 
 export default function IndexPage() {
-    return (
-        <div>
-            <Index />
-            <Footer />
-        </div>
-    )
+  return (
+    <div>
+      <Index />
+      <Footer />
+    </div>
+  );
 }
