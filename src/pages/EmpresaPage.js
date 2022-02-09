@@ -36,10 +36,12 @@ export default function EmpresaPage() {
 
       <div className="squaredImages">
         <div className="squaredBox">
-          <p>
-            Proporcionamos todo todo el equipo necesario para disfrutar con
-            comodidad y seguridad de la salida.
-          </p>
+          <div>
+            <p>
+              Proporcionamos todo todo el equipo necesario para disfrutar con
+              comodidad y seguridad de la salida.
+            </p>
+          </div>
           <img
             className="squared"
             src="https://images.unsplash.com/photo-1555447421-52e8d51a1ea3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGhvcnNlJTIwcmlkaW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
@@ -47,10 +49,12 @@ export default function EmpresaPage() {
           />
         </div>
         <div className="squaredBox">
-          <p>
-            Grupos reducidos para ofrecer una atención personalizada,
-            adaptándonos al nivel de cada persona.
-          </p>
+          <div>
+            <p>
+              Grupos reducidos para ofrecer una atención personalizada,
+              adaptándonos al nivel de cada tipo de persona.
+            </p>
+          </div>
           <img
             className="squared"
             src="https://images.unsplash.com/photo-1445235245954-c022e1e35eb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvcnNlJTIwcmlkaW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
@@ -59,11 +63,12 @@ export default function EmpresaPage() {
         </div>
 
         <div className="squaredBox">
-          <p>
-            {" "}
-            Todas nuestras rutas están cubiertas por los seguros de
-            Responsabilidad Civil y de Asistencia en Viaje requeridos.
-          </p>
+          <div>
+            <p>
+              Todas nuestras rutas están cubiertas por los seguros de
+              Responsabilidad Civil y de asistencia en viaje requeridos.
+            </p>
+          </div>
           <img
             className="squared"
             src="https://images.unsplash.com/photo-1579037640797-f5ddded4f30d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGhvcnNlJTIwcmlkaW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
