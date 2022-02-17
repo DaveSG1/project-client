@@ -10,7 +10,7 @@ export default function Ruta({ ruta }) {
   function handleClick(id) {
     setIdRuta(
       id
-    ); /* para que setee el id de la ficha en la cual hemos hecho click */
+    ); /* para que setee el id de la ficha en la que hemos hecho click */
 
     history.push(
       `/ficha/${id}`
