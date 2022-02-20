@@ -1,32 +1,22 @@
-import React, { useContext } from 'react'
+import React, { useState } from 'react'
 import { useEffect } from "react";
-import { GlobalContext } from '../App';
+import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import Ficha from '../components/Ficha';
 
 
 export default function FichaPage() {
 
-    const { rutas, idRuta } = useContext(GlobalContext);
-    // const [ficha, setFicha] = useState({});
+    const { id } = useParams();
+    
+    const [ficha, setFicha] = useState({});
 
-
-    const ficha = rutas.filter((ruta) => ruta.id === idRuta);
-    // setFicha(fichaFiltrada);
-
-    useEffect(() => {
-        console.log(ficha);
-
-    }, [ficha])
-
-
-    /* let URL = "https://run.mocky.io/v3/fd9d2731-666c-4efb-8871-1d14a7e8c38c"
+    const URL = "http://localhost:8000/api/ride/"+id;
 
     useEffect(() => {
         fetch(URL)
-            .then(r => r.json())
-            .then(data => setRutas(data))
-            ;
-    }, [URL]) */
+          .then(r => r.json())
+          .then(data => setFicha(data));
+        }, [URL])
 
 
     return (

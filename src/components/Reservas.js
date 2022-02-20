@@ -1,13 +1,18 @@
-import React from "react";
-/* import { useHistory } from "react-router"; */
+import React, { useEffect, useState } from "react";
+
 
 export default function Reservas() {
 
-    /* const history = useHistory();
+    const [routeNames, setRouteNames] = useState([]);    
 
-    function handleClick(e) {
-        history.push("/ficha")
-    }  */
+
+    let URL = "http://localhost:8000/api/rides/select";
+
+  useEffect(() => {
+    fetch(URL)
+      .then(r => r.json())
+      .then(data => setRouteNames(data));
+    }, [URL])   
 
     return (
         <div className="reservas">
@@ -15,7 +20,11 @@ export default function Reservas() {
             <form action="#" method="POST">
 
                 <label htmlFor="contactRoute">Ruta de interés:</label>
-                <input type="text" name="contactRoute" id="contactRoute" required placeholder="Indique el nombre de la ruta deseada" />
+                <select name="contactRoute" id="contactRoute" required >
+                   {routeNames.map(routeName => {
+                       return (<option key={routeName} value={routeName}>{routeName}</option>)
+                   })} 
+                </select>
 
                 <label htmlFor="contactDate">Fecha de interés:</label>
                 <input type="date" name="contactDate" id="contactDate" required />
