@@ -1,7 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router";
 
-
 export default function Ruta({ ruta }) {
   const history = useHistory();
 
@@ -19,7 +18,10 @@ export default function Ruta({ ruta }) {
     <div className="BrowserCardStyle">
       <div className="ruta">
         <h2> {ruta.name} </h2>
-        <img src="http://www.aventurasacaballo.com/_include/img/work/full/rutas_horas/sanpedro09.jpg" alt=""/>   
+        <img
+          src="http://www.aventurasacaballo.com/_include/img/work/full/rutas_horas/sanpedro09.jpg"
+          alt=""
+        />
         {/* TODO: la imagen posteriormente la tendre que poner en formato {} para que a cada ruta le asigne la suya */}
         <h3>{ruta.ccaa}</h3>
         <p>{ruta.location}</p>

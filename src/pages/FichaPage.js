@@ -1,29 +1,26 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import { useEffect } from "react";
-import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
-import Ficha from '../components/Ficha';
-
+import { useParams } from "react-router-dom/cjs/react-router-dom.min";
+import Ficha from "../components/Ficha";
 
 export default function FichaPage() {
+  const { id } = useParams();
 
-    const { id } = useParams();
-    
-    const [ficha, setFicha] = useState({});
+  const [ficha, setFicha] = useState({});
 
-    const URL = "http://localhost:8000/api/ride/"+id;
+  const URL = `http://localhost:8000/api/rides/read/route/${id}`;
 
-    useEffect(() => {
-        fetch(URL)
-          .then(r => r.json())
-          .then(data => setFicha(data));
-        }, [URL])
+  useEffect(() => {
+    fetch(URL)
+      .then((r) => r.json())
+      .then((data) => setFicha(data["data"]));
+  }, [URL]);
 
-
-    return (
-        <div>
-            <div className="BrowserCardStyle">
-                <Ficha ficha={ficha} />
-            </div>
-        </div>
-    )
+  return (
+    <div>
+      <div className="BrowserCardStyle">
+        <Ficha ficha={ficha} />
+      </div>
+    </div>
+  );
 }
