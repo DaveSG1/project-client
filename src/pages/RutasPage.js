@@ -17,7 +17,7 @@ export default function RutasPage() {
       .then((data) => {
         setRutas(
           data["data"]
-        ); /* porque tengo que acceder a la key 'data' dentro del objeto json el array de las varias que podría haber (definida en el back en el api controller para cada endpoint) */
+        ); /* porque tengo que acceder, de dentro del objeto json (data), al elemento que tiene la key 'data' ["data"] (puedo ver la estructura de lo que contiene data haciendo aqui un console log) (la key "data" la definí en el back en el api controller para cada endpoint) */
       });
   }, [URL]);
 
