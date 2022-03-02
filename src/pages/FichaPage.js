@@ -13,7 +13,9 @@ export default function FichaPage() {
   useEffect(() => {
     fetch(URL)
       .then((r) => r.json())
-      .then((data) => setFicha(data["data"]));
+      .then((data) => {
+        setFicha(data["data"][0], data.data[0].user);
+      });
   }, [URL]);
 
   return (
