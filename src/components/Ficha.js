@@ -4,9 +4,9 @@ import { useHistory } from "react-router";
 export default function Ficha({ ficha }) {
   const history = useHistory();
 
-  console.log(ficha.user);
+  /* console.log(ficha.user); */
   function handleClick(e) {
-    history.push("/reservas");
+    history.push(`/reservas/${ficha.id}`);
   }
 
   return (
