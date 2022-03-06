@@ -22,10 +22,13 @@ export default function RutasPage() {
   }, [URL]);
 
   return (
-    <div className="gridRutas">
-      {rutas?.map((ruta) => {
-        return <Ruta ruta={ruta} key={ruta.id} />;
-      })}
+    <div>
+      <h1 className="rutastitle">TODAS NUESTRAS RUTAS</h1>
+      <div className="gridRutas">
+        {rutas?.map((ruta) => {
+          return <Ruta ruta={ruta} key={ruta.id} />;
+        })}
+      </div>
     </div>
   );
 }

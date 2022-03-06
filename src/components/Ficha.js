@@ -17,7 +17,7 @@ export default function Ficha({ ficha }) {
         alt=""
       />
       {/* TODO: la imagen posteriormente la tendre que poner en formato {} para que a cada ruta le asigne la suya */}
-      <h3>{ficha.ccaa}</h3>
+      <h2>{ficha.ccaa}</h2>
       <p>{ficha.address}</p>
       <p>{ficha.user?.email}</p>
       <p>{ficha.telephone}</p>

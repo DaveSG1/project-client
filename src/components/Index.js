@@ -12,7 +12,7 @@ export default function EmpresaPage() {
   return (
     <div>
       <div className="heading">
-        <img className="mainImage" src="imagenes/fotoinicio.jpg" alt="" />
+        <header className="mainImage"></header>
         <div className="text">
           <h2 className="">Rutas exclusivas a caballo por toda España</h2>
           <span className="">

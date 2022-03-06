@@ -23,7 +23,7 @@ export default function Ruta({ ruta }) {
           alt=""
         />
         {/* TODO: la imagen posteriormente la tendre que poner en formato {} para que a cada ruta le asigne la suya */}
-        <h3>{ruta.ccaa}</h3>
+        <h2>{ruta.ccaa}</h2>
         <p>{ruta.location}</p>
 
         <button onClick={(e) => handleClick(ruta.id)}>Más información</button>

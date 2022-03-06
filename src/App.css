@@ -11,6 +11,8 @@
   --blue: #40e2a7;
   --paleblue: #7bebc5;
   --bone: #eeebdd;
+  --card: #968168;
+  --dark-card: #5f4e38;
 }
 
 /* Fuentes linkadas (tambien en el html en el head): */
@@ -22,7 +24,7 @@ body {
 * {
   box-sizing: border-box;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 /* Página Index: */
@@ -37,7 +39,14 @@ body {
 
 .heading .mainImage {
   width: 100vw;
-  height: 45vw;
+  height: 300px;
+
+  background-image: url(../public/imagenes/fotoinicio2edit.jpg);
+  background-size: cover;
+  background-position: center center;
+  /* background-attachment: inherit; */
+
+  border-radius: 5px 5px 0 0;
 }
 
 .heading .text {
@@ -79,7 +88,7 @@ body {
 
 .heading button {
   margin-top: 2rem;
-  font-size: 0.8rem;
+  font-size: 1.5rem;
 }
 
 /* Página Empresa: */
@@ -153,6 +162,13 @@ img.squared {
 
 /* Página RutasPage: */
 
+.rutastitle {
+  font-size: 1.4rem;
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--dark-brown);
+}
+
 .BrowserCardStyle {
   display: flex;
   flex-direction: column;
@@ -167,28 +183,33 @@ img.squared {
   justify-self: center;
   width: 80vw;
   margin: 5px;
-  background-color: var(--brown);
+  background-color: var(--card);
   color: var(--bone);
   padding: 10px;
   border-radius: 10px;
   padding: 10px;
 }
 
+.ruta h1 {
+  font-size: 1.3rem;
+}
+
 .ruta img {
-  width: 95%;
+  width: 80%;
   height: 200px;
   border-radius: 10px;
 }
 
 .ruta button {
   margin-top: 1rem;
-  background-color: var(--dark-brown);
+  background-color: var(--brown);
+  border: var(--brown);
   color: var(--bone);
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 .ruta button:hover {
-  background-color: var(--makeup);
+  background-color: var(--dark-brown);
 }
 
 /* Página Reservas: */
@@ -223,13 +244,14 @@ img.squared {
 
 .reservas button {
   margin-top: 1rem;
-  background-color: var(--dark-brown);
+  background-color: var(--brown);
+  border: var(--brown);
   color: var(--bone);
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 .reservas button:hover {
-  background-color: var(--makeup);
+  background-color: var(--dark-brown);
 }
 
 .reservas .routeTitle {
@@ -263,11 +285,11 @@ img.squared {
 /* Botones: */
 
 button {
-  background-color: var(--makeup);
+  background-color: var(--brown);
   color: white;
-  border: solid 1px var(--dark-brown);
+  border: solid 1px var(--brown);
   border-radius: 5px;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -296,13 +318,14 @@ button:hover {
 }
 
 .active {
-  background-color: var(--makeup);
+  background-color: var(--dark-card);
   border-radius: 5px;
 }
 
 .navbar a:hover {
   width: 75%;
-  /* border-bottom: var(--dark-brown) solid 4px; */
+  background-color: var(--dark-card);
+  border-radius: 5px;
 }
 
 /* Header: */
@@ -336,11 +359,16 @@ button:hover {
   margin-top: 50px;
   margin-left: 10px;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .loginform > form div {
   margin-top: 10px;
   margin-left: 10px;
+}
+
+.loginform label {
+  font-size: 1.2rem;
 }
 
 .loginform input {
@@ -362,7 +390,7 @@ button:hover {
   align-items: center;
   justify-content: flex-start;
 
-  background-color: var(--black);
+  background-color: var(--grey);
   color: white;
 
   border-radius: 10px;
@@ -372,6 +400,7 @@ button:hover {
 
 .newaccount h4 {
   margin-top: 5px;
+  font-size: 1.2rem;
 }
 
 .loginform form,
@@ -406,6 +435,10 @@ button:hover {
   width: 120px;
 }
 
+.registercomponent label {
+  font-size: 1.2rem;
+}
+
 /* Footer: */
 
 .footer {
@@ -428,6 +461,37 @@ button:hover {
   /* background-color: var(--bone); */
 }
 
+/* Media query tablet */
+
+@media only screen and (min-width: 600px) {
+  /* Página rutas: */
+
+  .gridRutas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ruta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    width: 40vw;
+    margin: 5px;
+    background-color: var(--card);
+    color: var(--bone);
+    padding: 10px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .ruta img {
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+  }
+}
+
 /* Media query escritorio */
 
 @media only screen and (min-width: 1024px) {
@@ -448,7 +512,14 @@ button:hover {
 
   .heading .mainImage {
     width: 100vw;
-    height: 400px;
+    height: 500px;
+
+    background-image: url(../public/imagenes/fotoinicio2edit.jpg);
+    background-size: cover;
+    background-position: center center;
+    /* background-attachment: inherit; */
+
+    border-radius: 5px 5px 0 0;
   }
 
   .heading .text {
@@ -510,7 +581,7 @@ button:hover {
     align-items: center;
     justify-content: center;
 
-    background-color: var(--black);
+    background-color: var(--grey);
     color: white;
 
     border-radius: 10px;
@@ -598,7 +669,7 @@ button:hover {
 
   .gridRutas {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .ruta {
@@ -606,9 +677,9 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-self: center;
-    width: 40vw;
+    width: 30vw;
     margin: 5px;
-    background-color: var(--brown);
+    background-color: var(--card);
     color: var(--bone);
     padding: 10px;
     border-radius: 10px;
@@ -616,7 +687,7 @@ button:hover {
   }
 
   .ruta img {
-    width: 95%;
+    width: 80%;
     height: 300px;
     border-radius: 10px;
   }
@@ -655,11 +726,11 @@ button:hover {
   /* Botones: */
 
   button {
-    background-color: var(--makeup);
+    background-color: var(--brown);
     color: white;
-    border: solid 1px var(--dark-brown);
+    border: solid 1px var(--brown);
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: "Open Sans", sans-serif;
   }
 
