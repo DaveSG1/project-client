@@ -22,10 +22,10 @@ export default function Reservas() {
 
       <form action="#" method="POST">
         <label htmlFor="contactRoute">Ruta de interés:</label>
-        <p>{routeDetails.name}</p>
+        <p className="routeTitle">{routeDetails.name}</p>
 
         <label htmlFor="contactDate">Fecha de interés:</label>
-        <select name="availability" id="">
+        <select className="select" name="availability" id="">
           {routeDetails.rideAvailabilities?.map((datetime) => {
             return <option value="datetime.id">{datetime.datetime}</option>;
           })}
