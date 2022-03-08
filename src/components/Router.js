@@ -15,6 +15,7 @@ import ErrorPage from "../pages/ErrorPage";
 
 import Footer from "./Footer";
 import EmpresaPage from "../pages/EmpresaPage";
+import AdminPage from "../pages/AdminPage";
 
 export default function Router() {
   return (
@@ -31,6 +32,8 @@ export default function Router() {
             <Route path="/reservas/:id" component={ReservasPage} />
 
             <Route path="/ficha/:id" component={FichaPage} />
+
+            <Route path="/admin/" component={AdminPage} />
 
             <Route path="/login" component={LoginPage} />
             <Route path="/register" component={RegisterPage} />

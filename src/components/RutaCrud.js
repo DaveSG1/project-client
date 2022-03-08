@@ -15,14 +15,20 @@ export default function Ruta({ ruta }) {
   }
 
   return (
-    <div className="BrowserCardStyle">
-      <div className="ruta">
+    <div>
+      <div className="rutaCrud">
         <h2> {ruta.name} </h2>
-        <img src={ruta.image} alt="imagen de ruta" />
         <h2>{ruta.ccaa}</h2>
         <p>{ruta.location}</p>
 
-        <button onClick={(e) => handleClick(ruta.id)}>Más información</button>
+        <div className="crudButtons">
+          <button className="buttonBlue" onClick={(e) => handleClick(ruta.id)}>
+            Modificar ésta ruta
+          </button>
+          <button className="buttonRed" onClick={(e) => handleClick(ruta.id)}>
+            Eliminar ésta ruta
+          </button>
+        </div>
       </div>
     </div>
   );
