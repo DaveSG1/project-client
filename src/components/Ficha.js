@@ -12,15 +12,10 @@ export default function Ficha({ ficha }) {
   return (
     <div className="ruta">
       <h2> {ficha.name} </h2>
-      <img
-        src="http://www.aventurasacaballo.com/_include/img/work/full/rutas_horas/sanpedro09.jpg"
-        alt=""
-      />
-      {/* TODO: la imagen posteriormente la tendre que poner en formato {} para que a cada ruta le asigne la suya */}
+      <img src={ficha.image} alt="imagen de ruta" />
       <h2>{ficha.ccaa}</h2>
       <p>{ficha.address}</p>
       <p>{ficha.user?.email}</p>
-      <p>{ficha.telephone}</p>
       <p>{ficha.duration} horas</p>
       <p>{ficha.description}</p>
       <p>{ficha.level}</p>

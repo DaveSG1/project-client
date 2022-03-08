@@ -18,11 +18,7 @@ export default function Ruta({ ruta }) {
     <div className="BrowserCardStyle">
       <div className="ruta">
         <h2> {ruta.name} </h2>
-        <img
-          src="http://www.aventurasacaballo.com/_include/img/work/full/rutas_horas/sanpedro09.jpg"
-          alt=""
-        />
-        {/* TODO: la imagen posteriormente la tendre que poner en formato {} para que a cada ruta le asigne la suya */}
+        <img src={ruta.image} alt="" />
         <h2>{ruta.ccaa}</h2>
         <p>{ruta.location}</p>
 
