@@ -28,7 +28,7 @@ export default function Router() {
 
             <Route path="/empresa" component={EmpresaPage} />
             <Route path="/rutas" component={RutasPage} />
-            <Route path="/reservas/:?id" component={ReservasPage} />
+            <Route path="/reservas/:id" component={ReservasPage} />
 
             <Route path="/ficha/:id" component={FichaPage} />
 

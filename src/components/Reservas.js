@@ -9,11 +9,15 @@ export default function Reservas() {
   /* console.log("reading id", id); */
 
   let URL = `http://localhost:8000/api/rides/read/booking/see/${id}`;
+  console.log(URL);
 
   useEffect(() => {
     fetch(URL)
       .then((r) => r.json())
-      .then((data) => setRouteDetails(data["data"][0]));
+      .then((data) => {
+        console.log(data);
+        setRouteDetails(data["data"][0]);
+      });
   }, [URL]);
 
   return (
