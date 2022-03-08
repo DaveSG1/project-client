@@ -214,6 +214,13 @@ img.squared {
 
 /* Página Reservas: */
 
+.reservas h3 {
+  font-size: 1.4rem;
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--dark-brown);
+}
+
 .reservas form {
   display: flex;
   flex-direction: column;
@@ -514,6 +521,68 @@ button:hover {
   background-color: rgb(138, 34, 39);
 }
 
+.post h3 {
+  font-size: 1.4rem;
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--dark-brown);
+}
+
+.post form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  width: fit-content;
+  margin: auto;
+  background-color: var(--makeup);
+  color: var(--black);
+  padding: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.post form input {
+  width: 80vw;
+  height: 2rem;
+  margin-block: 1rem;
+  border-radius: 5px;
+}
+
+.post form textarea {
+  width: 80vw;
+  height: 6rem;
+  margin-block: 1rem;
+  border-radius: 5px;
+}
+
+.post button {
+  margin-top: 1rem;
+  background-color: var(--brown);
+  border: var(--brown);
+  color: var(--bone);
+  font-size: 1.2rem;
+}
+
+.post button:hover {
+  background-color: var(--dark-brown);
+}
+
+.post .routeTitle {
+  border: 1px solid black;
+  font-size: larger;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: white;
+}
+
+.post .select {
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: white;
+  padding: 5px;
+}
+
 /* Media query tablet */
 
 @media only screen and (min-width: 600px) {
@@ -747,7 +816,7 @@ button:hover {
 
   /* Página reservas: */
 
-  .reservas form input {
+  /* .reservas form input {
     width: 40vw;
     height: 2rem;
     margin-block: 1rem;
@@ -774,7 +843,7 @@ button:hover {
     border: 1px solid black;
     background-color: white;
     padding: 5px;
-  }
+  } */
 
   /* Botones: */
 

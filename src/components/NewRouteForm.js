@@ -1,90 +1,131 @@
-import { useState } from "react";
+import React from "react";
 
-export default function NewRouteForm({ setContacts }) {
+export default function NewRouteForm({ id }) {
+  /* ¿como recibo el id de usuario aqui? */
+  function handlePost() {
+    const ccaa = window.document.getElementById("ccaa").value;
+    const name = window.document.getElementById("name").value;
+    const location = window.document.getElementById("location").value;
+    const address = window.document.getElementById("address").value;
+    const telephone = window.document.getElementById("telephone").value;
+    const duration = window.document.getElementById("duration").value;
+    const description = window.document.getElementById("description").value;
+    const level = window.document.getElementById("level").value;
 
-    // const [firstName, setFirstName] = useState("");
-    // const [lastName, setLastName] = useState("");
-    // const [address, setAddress] = useState("");
-    // const [zip, setZip] = useState("");
-    // const [city, setCity] = useState("");
-    // const [phone, setPhone] = useState("");
+    fetch(`http://localhost:8000/admin/rides/create/${id}`, {
+      /* ...para que lo coja aquí y asigne la ruta a dicho id de usuario? */
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer" + localStorage.getItem("token"),
+      },
+      body: JSON.stringify({
+        ccaa: ccaa,
+        name: name,
+        location: location,
+        address: address,
+        telephone: telephone,
+        duration: duration,
+        description: description,
+        level: level,
+      }),
+    }).then((data) =>
+      data.json().then((data) => {
+        localStorage.setItem("token", data["token"]);
+      })
+    );
+  }
 
-    // function handleFirstName(e) {
-    //     setFirstName(e.target.value)
-    // };
+  return (
+    <div className="post">
+      <h3>Publicar una nueva ruta</h3>
 
-    // function handleLastName(e) {
-    //     setLastName(e.target.value)
-    // };
+      {/*    $ride->setActive($data['active']);  PREGUNTAR MIGUEL: El "active" lo Elimino de la bbdd o pongo algo para que por defecto sea 1?
+            $ride->setCcaa($data['ccaa']);
+            $ride->setName($data['name']);
+            $ride->setLocation($data['location']);
+            $ride->setAddress($data['address']);
+            $ride->setTelephone($data['telephone']);
+            $ride->setDuration($data['duration']);
+            $ride->setDescription($data['description']);
+            $ride->setLevel($data['level']);
+            $ride->setUser($user); */}
 
-    // function handleAddress(e) {
-    //     setAddress(e.target.value)
-    // };
+      <form action="#" method="POST">
+        <label htmlFor="ccaa">Comunidad autónoma:</label>
+        <input
+          type="text"
+          name="ccaa"
+          id="ccaa"
+          required
+          placeholder="Introduzca la comunidad autónoma"
+        />
 
-    // function handleZip(e) {
-    //     setZip(e.target.value)
-    // };
+        <label htmlFor="name">Nombre ruta:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          placeholder="Introduzca el nombre de la ruta"
+        />
 
-    // function handleCity(e) {
-    //     setCity(e.target.value)
-    // };
+        <label htmlFor="location">Localidad:</label>
+        <input
+          type="text"
+          name="location"
+          id="location"
+          required
+          placeholder="Introduzca la localidad"
+        />
 
-    // function handlePhone(e) {
-    //     setPhone(e.target.value)
-    // };
-    const initialState = {
-        firstName: "",
-        lastName: "",
-        address: "",
-        zip: "",
-        city: "",
-        phone: ""
-    }
-    const [form, setForm] = useState(initialState)
+        <label htmlFor="address">Dirección:</label>
+        <input
+          type="text"
+          name="address"
+          id="address"
+          required
+          placeholder="Introduzca la dirección"
+        />
 
-    function handleInput(e) {
-        // console.log(e.target.name);
-        // const inputName = e.target.name;
-        // const newValue = e.target.value;
-        setForm({ ...form, [e.target.name]: e.target.value });
-    }
+        <label htmlFor="telephone">Teléfono:</label>
+        <input
+          type="number"
+          name="telephone"
+          id="telephone"
+          required
+          placeholder="Introduzca el teléfono"
+        />
 
-    function submit(e) {
-        e.preventDefault();
+        <label htmlFor="duration">Duración:</label>
+        <input
+          type="text"
+          name="address"
+          id="address"
+          required
+          placeholder="Introduzca la duración (ej. 2 si la ruta dura 2 horas)"
+        />
 
-        // const newContact = {firstName, lastName, address, zip, city, phone} //usamos el nombre de nuestras variables, y automaticamente nos asignará la propiedad con el nombre de esa variable y conteniendo su valor
+        <label htmlFor="description">Descripción:</label>
+        <textarea
+          name="description"
+          id="description"
+          placeholder="Introduzca una descripción de la ruta, sus características y demás detalles."
+        ></textarea>
 
-        // const newContact = {
-        //     name: name,
-        //     lastName: lastName,
-        //     address: address,
-        //     zip: zip,
-        //     city: city,
-        //     phone: phone
-        // }
+        <label htmlFor="level">Nivel:</label>
+        <input
+          type="text"
+          name="level"
+          id="level"
+          required
+          placeholder="Introduzca el nivel de dificultad de la ruta (ej. bajo, medio-alto)"
+        />
 
-        // setContacts([...contacts, newContact]) //Necesitaria recibir los contactos actuales (contacts)
-        setContacts(currentContacts => [...currentContacts, form])
-
-        // e.target.reset();
-        // setFirstName("");
-        // setLastName("");
-        // setAddress("");
-        // setZip("");
-        // setCity("");
-        // setPhone("");
-        setForm(initialState);
-    }
-
-    return (
-        <form className="container mb-5 form-group" onSubmit={submit}>
-            <input type="text" name="firstName" className="form-control mb-2" value={form.firstName} onChange={handleInput} placeholder="Introduce un nombre" /> {/* ponemos value pform.ara que cuando resetee despues del submit nos ponga el valor vacío que envia setState */}
-            <input type="text" name="lastName" className="form-control mb-2" value={form.lastName} onChange={handleInput} placeholder="Introduce los apellidos" />
-            <input type="text" name="address" className="form-control mb-2" value={form.address} onChange={handleInput} placeholder="Introduce la dirección" />
-            <input type="text" name="zip" className="form-control mb-2" value={form.zip} onChange={handleInput} placeholder="Introduce la provincia" />
-            <input type="text" name="city" className="form-control mb-2" value={form.city} onChange={handleInput} placeholder="Introduce el código postal" />
-            <input type="text" name="phone" className="form-control mb-2" value={form.phone} onChange={handleInput} placeholder="Introduce el número de teléfono" />
-            <button type="submit" className="btn btn-success">Registrar</button>
-        </form>
-    )
+        <button type="button" onClick={handlePost}>
+          Enviar
+        </button>
+      </form>
+    </div>
+  );
 }
