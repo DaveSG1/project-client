@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function NewRouteForm({ id }) {
+export default function NewRouteForm() {
   /* ¿como recibo el id de usuario aqui? */
   function handlePost() {
     const ccaa = window.document.getElementById("ccaa").value;
@@ -12,7 +12,7 @@ export default function NewRouteForm({ id }) {
     const description = window.document.getElementById("description").value;
     const level = window.document.getElementById("level").value;
 
-    fetch(`http://localhost:8000/admin/rides/create/${id}`, {
+    fetch("http://localhost:8000/admin/rides/create", {
       /* ...para que lo coja aquí y asigne la ruta a dicho id de usuario? */
       method: "POST",
       headers: {
