@@ -26,7 +26,7 @@ export default function AdminPage() {
       },
     }).then((request) =>
       request.json().then((data) => {
-        console.log(data);
+        setRutas(data["data"]);
       })
     );
   }, [URL]);

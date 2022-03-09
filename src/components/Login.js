@@ -18,6 +18,13 @@ export default function Login() {
     }).then((data) =>
       data.json().then((data) => {
         localStorage.setItem("token", data["token"]);
+        /* ésta función de aquí es la que guarda el token en mi localstorage, sólo hace falta aquí en el login */
+
+        /* localStorage.clear 
+        ésta función sería para borrar el token para el logout*/
+
+        history.push("/admin");
+        /* ésta función de aquí es la que, cuando el usuario lo reconoce como registrado, y ha guardado su token, redirige a la página de admin, sólo hace falta aquí en el login */
       })
     );
   }
