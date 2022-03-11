@@ -39,9 +39,9 @@ body {
 
 .heading .mainImage {
   width: 100vw;
-  height: 300px;
+  height: 200px;
 
-  background-image: url(../public/imagenes/fotoinicio2edit.jpg);
+  background-image: url(https://images.unsplash.com/photo-1445235245954-c022e1e35eb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
   background-size: cover;
   background-position: center center;
   /* background-attachment: inherit; */
@@ -105,6 +105,10 @@ body {
   width: 85vw;
   height: 45vh;
   border-radius: 5px;
+}
+
+.headingEmpresa h2 {
+  font-size: 1.4rem;
 }
 
 .headingEmpresa .text {
@@ -377,13 +381,13 @@ button:hover {
 }
 
 .active {
-  background-color: var(--dark-card);
+  background-color: var(--brown);
   border-radius: 5px;
 }
 
 .navbar a:hover {
   width: 75%;
-  background-color: var(--brown);
+  background-color: var(--dark-card);
   border-radius: 5px;
 }
 
@@ -718,7 +722,7 @@ button:hover {
     width: 100vw;
     height: 500px;
 
-    background-image: url(../public/imagenes/fotoinicio2edit.jpg);
+    background-image: url(https://images.unsplash.com/photo-1445235245954-c022e1e35eb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
     background-size: cover;
     background-position: center center;
     /* background-attachment: inherit; */

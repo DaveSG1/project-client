@@ -20,8 +20,8 @@ export default function EmpresaPage() {
             disfrutar de una experiencia de ocio. Por ésto hemos seleccionado
             para nuestros clientes las mejores y más espectaculares rutas a
             caballo disponibles en España para que el cliente no se tenga que
-            preocupar de nada, sólamene de disfrutar de la experiencia. De este
-            modo evitamos el tedioso proceso de búsqueda entre cientos de web.
+            preocupar de nada, sólamente de disfrutar de la experiencia. De este
+            modo evitamos el tedioso proceso de búsqueda entre cientos de webs.
             Asimismo, coordinamos todo el proceso de reserva de la ruta elegida,
             únicamente contáctanos, del resto nos encargamos nosotros.
           </span>
@@ -52,12 +52,12 @@ export default function EmpresaPage() {
           <div>
             <p>
               Grupos reducidos para ofrecer una atención personalizada,
-              adaptándonos al nivel de cada tipo de persona.
+              adaptándonos al nivel de cada persona.
             </p>
           </div>
           <img
             className="squared"
-            src="https://images.unsplash.com/photo-1445235245954-c022e1e35eb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvcnNlJTIwcmlkaW5nfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+            src="https://images.unsplash.com/photo-1512073995635-c7001b907e21?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
             alt=""
           />
         </div>
