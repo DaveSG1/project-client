@@ -212,6 +212,58 @@ img.squared {
   background-color: var(--dark-brown);
 }
 
+/* Página FichaPage: */
+
+.fichatitle {
+  font-size: 1.4rem;
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--dark-brown);
+}
+
+.BrowserCardStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
+.ficha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  width: 350px;
+  margin: 5px;
+  background-color: var(--card);
+  color: var(--bone);
+  padding: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.ficha h2 {
+  font-size: 1.3rem;
+}
+
+.ficha img {
+  width: 80%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.ficha button {
+  margin-top: 1rem;
+  background-color: var(--brown);
+  border: var(--brown);
+  color: var(--bone);
+  font-size: 1.2rem;
+}
+
+.ficha button:hover {
+  background-color: var(--dark-brown);
+}
+
 /* Página Reservas: */
 
 .reservas h3 {
@@ -471,8 +523,11 @@ button:hover {
 /* RutaCrud y AdminPage: */
 
 .rutaCrud {
-  border: 3px solid var(--black);
-  margin: 20px;
+  border: 2px solid var(--black);
+  width: 50vw;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -480,12 +535,18 @@ button:hover {
   font-size: 1.3rem;
 }
 
+.rutaCrud img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+
 .buttonGreen {
   background-color: rgb(81, 136, 81);
   color: white;
   border: solid 1px rgb(81, 136, 81);
   border-radius: 5px;
-  width: 500px;
+  width: 200px;
   font-size: 1.3rem;
   font-family: "Open Sans", sans-serif;
 }
@@ -498,7 +559,7 @@ button:hover {
   background-color: rgb(30, 168, 223);
   color: white;
   border: solid 1px rgb(30, 168, 223);
-  margin: 0 5px;
+  margin: 10px 5px;
   border-radius: 5px;
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
@@ -610,6 +671,27 @@ button:hover {
   .ruta img {
     width: 80%;
     height: 200px;
+    border-radius: 10px;
+  }
+
+  /* RutaCrud y AdminPage: */
+
+  .rutaCrud {
+    border: 2px solid var(--black);
+    width: 50vw;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .rutaCrud h2 {
+    font-size: 1.3rem;
+  }
+
+  .rutaCrud img {
+    width: 250px;
+    height: 250px;
     border-radius: 10px;
   }
 }
@@ -814,6 +896,28 @@ button:hover {
     border-radius: 10px;
   }
 
+  /* Página ficha: */
+
+  .ficha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    width: 60vw;
+    margin: 5px;
+    background-color: var(--card);
+    color: var(--bone);
+    padding: 10px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .ficha img {
+    width: 80%;
+    height: 400px;
+    border-radius: 10px;
+  }
+
   /* Página reservas: */
 
   /* .reservas form input {
@@ -858,6 +962,27 @@ button:hover {
 
   button:hover {
     background-color: var(--dark-brown);
+  }
+
+  /* RutaCrud y AdminPage: */
+
+  .rutaCrud {
+    border: 2px solid var(--black);
+    width: 50vw;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .rutaCrud h2 {
+    font-size: 1.3rem;
+  }
+
+  .rutaCrud img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
   }
 }
 

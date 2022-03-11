@@ -10,7 +10,7 @@ export default function Ficha({ ficha }) {
   }
 
   return (
-    <div className="ruta">
+    <div className="ficha">
       <h2> {ficha.name} </h2>
       <img src={ficha.image} alt="imagen de ruta" />
       <h2>{ficha.ccaa}</h2>

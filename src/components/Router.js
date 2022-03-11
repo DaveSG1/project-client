@@ -17,6 +17,7 @@ import Footer from "./Footer";
 import EmpresaPage from "../pages/EmpresaPage";
 import AdminPage from "../pages/AdminPage";
 import NewRouteFormPage from "../pages/NewRouteFormPage";
+import EditRouteFormPage from "../pages/EditRouteFormPage";
 
 export default function Router() {
   return (
@@ -37,6 +38,8 @@ export default function Router() {
             <Route path="/admin/" component={AdminPage} />
 
             <Route path="/newRouteForm/" component={NewRouteFormPage} />
+
+            <Route path="/editRouteForm/" component={EditRouteFormPage} />
 
             <Route path="/login" component={LoginPage} />
             <Route path="/register" component={RegisterPage} />

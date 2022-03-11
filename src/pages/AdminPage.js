@@ -39,7 +39,7 @@ export default function AdminPage() {
       </button>
       <br />
       <br />
-      <div className="gridRutas">
+      <div className="gridRutasAdmin">
         {rutas?.map((ruta) => {
           return <RutaCrud ruta={ruta} key={ruta.id} />;
         })}
