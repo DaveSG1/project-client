@@ -1,23 +1,26 @@
 import React from "react";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function NewRouteForm() {
-  /* ¿como recibo el id de usuario aqui? */
+  
+
+  const history = useHistory();
+
   function handlePost() {
-    const ccaa = window.document.getElementById("ccaa").value;
-    const name = window.document.getElementById("name").value;
-    const location = window.document.getElementById("location").value;
-    const address = window.document.getElementById("address").value;
-    const telephone = window.document.getElementById("telephone").value;
-    const duration = window.document.getElementById("duration").value;
-    const description = window.document.getElementById("description").value;
-    const level = window.document.getElementById("level").value;
+    const ccaa = document.getElementById("ccaa").value;
+    const name = document.getElementById("name").value;
+    const location = document.getElementById("location").value;
+    const address = document.getElementById("address").value;
+    const telephone = document.getElementById("telephone").value;
+    const duration = document.getElementById("duration").value;
+    const description = document.getElementById("description").value;
+    const level = document.getElementById("level").value;
 
     fetch("http://localhost:8000/admin/rides/create", {
-      /* ...para que lo coja aquí y asigne la ruta a dicho id de usuario? */
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: "Bearer" + localStorage.getItem("token"),
+        "Authorization": `Bearer ${localStorage.getItem("token")}`,
       },
       body: JSON.stringify({
         ccaa: ccaa,
@@ -28,28 +31,16 @@ export default function NewRouteForm() {
         duration: duration,
         description: description,
         level: level,
+        active: 1,
       }),
-    }).then((data) =>
-      data.json().then((data) => {
-        localStorage.setItem("token", data["token"]);
-      })
-    );
+    }).then().then();
+
+    history.push('/admin');
   }
 
   return (
     <div className="post">
       <h3>Publicar una nueva ruta</h3>
-
-      {/*    $ride->setActive($data['active']);  PREGUNTAR MIGUEL: El "active" lo Elimino de la bbdd o pongo algo para que por defecto sea 1?
-            $ride->setCcaa($data['ccaa']);
-            $ride->setName($data['name']);
-            $ride->setLocation($data['location']);
-            $ride->setAddress($data['address']);
-            $ride->setTelephone($data['telephone']);
-            $ride->setDuration($data['duration']);
-            $ride->setDescription($data['description']);
-            $ride->setLevel($data['level']);
-            $ride->setUser($user); */}
 
       <form action="#" method="POST">
         <label htmlFor="ccaa">Comunidad autónoma:</label>
@@ -99,9 +90,9 @@ export default function NewRouteForm() {
 
         <label htmlFor="duration">Duración:</label>
         <input
-          type="text"
-          name="address"
-          id="address"
+          type="number"
+          name="number"
+          id="duration"
           required
           placeholder="Introduzca la duración (ej. 2 si la ruta dura 2 horas)"
         />

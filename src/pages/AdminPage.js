@@ -21,8 +21,8 @@ export default function AdminPage() {
     fetch(URL, {
       method: "GET",
       headers: {
-        Authorization: "Bearer " + localStorage.getItem("token"),
         "Content-Type": "application/json",
+        "Authorization": `Bearer ${localStorage.getItem("token")}`,
       },
     }).then((request) =>
       request.json().then((data) => {

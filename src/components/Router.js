@@ -39,7 +39,7 @@ export default function Router() {
 
             <Route path="/newRouteForm/" component={NewRouteFormPage} />
 
-            <Route path="/editRouteForm/" component={EditRouteFormPage} />
+            <Route path="/editRouteForm/:id" component={EditRouteFormPage} />
 
             <Route path="/login" component={LoginPage} />
             <Route path="/register" component={RegisterPage} />

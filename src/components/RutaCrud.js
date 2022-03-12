@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router";
 
-export default function Ruta({ ruta }) {
+export default function RutaCrud({ ruta }) {
   const history = useHistory();
 
   // const { setIdRuta } = useContext(GlobalContext);
@@ -19,9 +19,21 @@ export default function Ruta({ ruta }) {
 
     // setIdRuta(id);                /* para que setee el id de la ficha en la que hemos hecho click */
 
-    history.push(
-      `/ficha/${id}`
-    ); /* para que vaya a la página de ficha/la ficha a la que le hemos hecho click */
+    fetch(`http://localhost:8000/admin/rides/delete/${id}`, {
+      /* ...para que lo coja aquí y asigne la ruta a dicho id de usuario? */
+      method: "PUT",
+      headers: {
+        "Authorization": `Bearer ${localStorage.getItem("token")}`,
+      },
+    }).then(res => res.json())
+    .then(res => {
+      if (res === 202){
+        alert("Ruta eliminada!")
+      }
+    });
+
+    // history.push('/rutas');
+    // history.push('/admin');
   }
 
   return (

@@ -1,22 +1,26 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 export default function EditRouteForm() {
-  function handlePut() {
-    const ccaa = window.document.getElementById("ccaa").value;
-    const name = window.document.getElementById("name").value;
-    const location = window.document.getElementById("location").value;
-    const address = window.document.getElementById("address").value;
-    const telephone = window.document.getElementById("telephone").value;
-    const duration = window.document.getElementById("duration").value;
-    const description = window.document.getElementById("description").value;
-    const level = window.document.getElementById("level").value;
 
-    fetch("http://localhost:8000/admin/rides/create", {
+  let {id} = useParams();
+
+  function handlePut() {
+    const ccaa = document.getElementById("ccaa").value;
+    const name = document.getElementById("name").value;
+    const location = document.getElementById("location").value;
+    const address = document.getElementById("address").value;
+    const telephone = document.getElementById("telephone").value;
+    const duration = document.getElementById("duration").value;
+    const description = document.getElementById("description").value;
+    const level = document.getElementById("level").value;  
+
+    fetch(`http://localhost:8000/admin/rides/edit/${id}`, {
       /* ...para que lo coja aquí y asigne la ruta a dicho id de usuario? */
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
-        Authorization: "Bearer" + localStorage.getItem("token"),
+        "Authorization": `Bearer ${localStorage.getItem("token")}`,
       },
       body: JSON.stringify({
         ccaa: ccaa,
@@ -28,11 +32,7 @@ export default function EditRouteForm() {
         description: description,
         level: level,
       }),
-    }).then((data) =>
-      data.json().then((data) => {
-        localStorage.setItem("token", data["token"]);
-      })
-    );
+    }).then().then();
   }
 
   return (
@@ -87,9 +87,9 @@ export default function EditRouteForm() {
 
         <label htmlFor="duration">Duración:</label>
         <input
-          type="text"
-          name="address"
-          id="address"
+          type="number"
+          name="duration"
+          id="duration"
           required
           placeholder="Introduzca la duración (ej. 2 si la ruta dura 2 horas)"
         />

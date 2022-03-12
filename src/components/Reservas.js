@@ -9,13 +9,11 @@ export default function Reservas() {
   /* console.log("reading id", id); */
 
   let URL = `http://localhost:8000/api/rides/read/booking/see/${id}`;
-  console.log(URL);
-
+ 
   useEffect(() => {
     fetch(URL)
       .then((r) => r.json())
-      .then((data) => {
-        console.log(data);
+      .then((data) => {        
         setRouteDetails(data["data"][0]);
       });
   }, [URL]);
@@ -31,7 +29,7 @@ export default function Reservas() {
         <label htmlFor="contactDate">Fecha de interés:</label>
         <select className="select" name="availability" id="">
           {routeDetails.rideAvailabilities?.map((datetime) => {
-            return <option value="datetime.id">{datetime.datetime}</option>;
+            return <option key={datetime.datetime} value="datetime.id">{datetime.datetime}</option>;
           })}
         </select>
 
