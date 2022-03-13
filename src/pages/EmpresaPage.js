@@ -1,13 +1,6 @@
 import React from "react";
-/* import { useHistory } from 'react-router' */
-/* import  from '../components/ ' */
 
-export default function EmpresaPage() {
-  /*  const history = useHistory();
- 
-     function handleClick(e) {
-         history.push("/rutas")
-     } */
+export default function EmpresaPage() {  
 
   return (
     <div>

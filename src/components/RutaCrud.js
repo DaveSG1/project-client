@@ -2,25 +2,19 @@ import React from "react";
 import { useHistory } from "react-router";
 
 export default function RutaCrud({ ruta }) {
-  const history = useHistory();
+  const history = useHistory();  
 
-  // const { setIdRuta } = useContext(GlobalContext);
-
-  function handleClickEdit(id) {
-    // setIdRuta(id);                /* para que setee el id de la ficha en la que hemos hecho click */
+  function handleClickEdit(id) {    
 
     history.push(
       `/editRouteForm/${id}`
-    ); /* para que vaya a la página de ficha/la ficha a la que le hemos hecho click */
+    ); /* para que vaya a la página del formulario para editar la ruta a la que le hemos hecho click */
   }
 
-  function handleClickDelete(id) {
-    /* EN ÉSTA ENTIENDO QUE DEBERÉ LINKAR DIRECTAMENTE EL ENLACE DEL ENDPOINT CREADO PARA ELIMINAR LA RUTA */
-
-    // setIdRuta(id);                /* para que setee el id de la ficha en la que hemos hecho click */
+  function handleClickDelete(id) {    
 
     fetch(`http://localhost:8000/admin/rides/delete/${id}`, {
-      /* ...para que lo coja aquí y asigne la ruta a dicho id de usuario? */
+      
       method: "PUT",
       headers: {
         "Authorization": `Bearer ${localStorage.getItem("token")}`,
@@ -30,10 +24,7 @@ export default function RutaCrud({ ruta }) {
       if (res === 202){
         alert("Ruta eliminada!")
       }
-    });
-
-    // history.push('/rutas');
-    // history.push('/admin');
+    });    
   }
 
   return (
@@ -43,19 +34,24 @@ export default function RutaCrud({ ruta }) {
         <img src={ruta.image} alt="imagen de ruta" />
         <h2>{ruta.ccaa}</h2>
         <p>{ruta.location}</p>
+        <p>Dirección: {ruta.address}</p>
+        <p>Teléfono: {ruta.telephone}</p>
+        <p>Duración: {ruta.duration} horas</p>
+        <p>{ruta.description}</p>
+        <p>Nivel de dificultad: {ruta.level}</p>
 
         <div className="crudButtons">
           <button
             className="buttonBlue"
             onClick={(e) => handleClickEdit(ruta.id)}
           >
-            Modificar ésta ruta
+            Modificar esta ruta
           </button>
           <button
             className="buttonRed"
             onClick={(e) => handleClickDelete(ruta.id)}
           >
-            Eliminar ésta ruta
+            Eliminar esta ruta
           </button>
         </div>
       </div>

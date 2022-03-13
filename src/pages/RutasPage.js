@@ -4,10 +4,8 @@ import { useEffect } from "react";
 import Ruta from "../components/Ruta";
 
 export default function RutasPage() {
-  //   const { rutas, setRutas } = useContext(GlobalContext);
-  const [rutas, setRutas] = useState([]);
-
-  // const { rutas, setRutas } = useContext(GlobalContext);
+  
+  const [rutas, setRutas] = useState([]); 
 
   let URL = "http://localhost:8000/api/rides/read";
 

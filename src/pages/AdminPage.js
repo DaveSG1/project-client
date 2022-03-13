@@ -10,10 +10,7 @@ export default function AdminPage() {
     history.push("/newRouteForm/");
   }
 
-  //   const { rutas, setRutas } = useContext(GlobalContext);
-  const [rutas, setRutas] = useState([]);
-
-  // const { rutas, setRutas } = useContext(GlobalContext)
+  const [rutas, setRutas] = useState([]);  
 
   const URL = "http://localhost:8000/admin/rides/read/user";
 

@@ -1,4 +1,4 @@
-/* colores: */
+/* Colores: */
 
 :root {
   --black: #000000;
@@ -15,7 +15,7 @@
   --dark-card: #5f4e38;
 }
 
-/* Fuentes linkadas (tambien en el html en el head): */
+/* Fuentes linkadas (tambien en el head del html): */
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -33,8 +33,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  /* background-color: var(--bone); */
+  align-items: center;  
 }
 
 .heading .mainImage {
@@ -44,8 +43,6 @@ body {
   background-image: url(https://images.unsplash.com/photo-1445235245954-c022e1e35eb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
   background-size: cover;
   background-position: center center;
-  /* background-attachment: inherit; */
-
   border-radius: 5px 5px 0 0;
 }
 
@@ -58,7 +55,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: var(--bone); */
 }
 
 .roundedBox {
@@ -97,13 +93,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  /* background-color: var(--bone); */
+  align-items: center;  
 }
 
 .headingEmpresa .mainImageEmpresa {
-  width: 85vw;
-  height: 45vh;
+  width: 90vw;
+  height: 70vh;
   border-radius: 5px;
 }
 
@@ -121,8 +116,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  /* background-color: var(--bone); */
+  align-items: center;  
 }
 
 .squaredBox {
@@ -407,7 +401,7 @@ button:hover {
   font-size: 1.8rem;
 }
 
-/* Página de Login (Entrar): */
+/* Página de Login: */
 
 .logincomponent,
 .registercomponent {
@@ -520,8 +514,7 @@ button:hover {
 }
 
 .contentwrap {
-  padding-bottom: 75px;
-  /* background-color: var(--bone); */
+  padding-bottom: 75px;  
 }
 
 /* RutaCrud y AdminPage: */
@@ -651,6 +644,7 @@ button:hover {
 /* Media query tablet */
 
 @media only screen and (min-width: 600px) {
+
   /* Página rutas: */
 
   .gridRutas {
@@ -724,9 +718,7 @@ button:hover {
 
     background-image: url(https://images.unsplash.com/photo-1445235245954-c022e1e35eb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
     background-size: cover;
-    background-position: center center;
-    /* background-attachment: inherit; */
-
+    background-position: center center; 
     border-radius: 5px 5px 0 0;
   }
 
@@ -788,10 +780,8 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     background-color: var(--grey);
     color: white;
-
     border-radius: 10px;
     padding: 10px;
     margin-top: 100px;
@@ -918,40 +908,9 @@ button:hover {
 
   .ficha img {
     width: 80%;
-    height: 400px;
+    height: 450px;
     border-radius: 10px;
-  }
-
-  /* Página reservas: */
-
-  /* .reservas form input {
-    width: 40vw;
-    height: 2rem;
-    margin-block: 1rem;
-    border-radius: 5px;
-  }
-
-  .reservas form textarea {
-    width: 40vw;
-    height: 6rem;
-    margin-block: 1rem;
-    border-radius: 5px;
-  }
-
-  .reservas .routeTitle {
-    font-size: larger;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: white;
-  }
-
-  .reservas .select {
-    border-radius: 5px;
-    border: 1px solid black;
-    background-color: white;
-    padding: 5px;
-  } */
+  }  
 
   /* Botones: */
 
@@ -989,43 +948,3 @@ button:hover {
     border-radius: 10px;
   }
 }
-
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
- */

@@ -6,8 +6,6 @@ export default function Reservas() {
 
   const { id } = useParams();
 
-  /* console.log("reading id", id); */
-
   let URL = `http://localhost:8000/api/rides/read/booking/see/${id}`;
  
   useEffect(() => {

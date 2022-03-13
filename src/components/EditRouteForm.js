@@ -16,7 +16,7 @@ export default function EditRouteForm() {
     const level = document.getElementById("level").value;  
 
     fetch(`http://localhost:8000/admin/rides/edit/${id}`, {
-      /* ...para que lo coja aquí y asigne la ruta a dicho id de usuario? */
+      
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

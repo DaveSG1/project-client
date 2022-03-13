@@ -1,8 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
-export default function NewRouteForm() {
-  
+export default function NewRouteForm() {  
 
   const history = useHistory();
 
