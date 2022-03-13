@@ -7,8 +7,8 @@
 
 Primero: Instalar Npm (https://nodejs.org/es/download)
 
-Segundo: Clonar el proyecto usando el siguiente comando en consola: "git clone https://github.com/DaveSG1/project-client.git"
+Segundo: Clonar el proyecto usando el siguiente comando en consola: `git clone https://github.com/DaveSG1/project-client.git`
 
-Tercero: Situado en la carpeta generada para el proyecto, ejecutar, por éste orden, los comandos: "npm update", "npm install" y "npm start"
+Tercero: Situado en la carpeta generada para el proyecto, ejecutar, por éste orden, los comandos: `npm update`, `npm install` y `npm start`
 
 Cuarto: La página se cargará en su navegador.
