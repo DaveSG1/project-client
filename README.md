@@ -2,6 +2,16 @@
 
 Éste proyecto se ha creado con [Create React App](https://github.com/facebook/create-react-app).
 
+## Tecnologías utilizadas
+
+HTML5
+
+CSS3
+
+JavaScript
+
+React.Js
+
 
 ## Instrucciones para la instalación
 
