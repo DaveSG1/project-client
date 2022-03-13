@@ -19,7 +19,8 @@ export default function FichaPage() {
   }, [URL]);
 
   return (
-    <div>
+    <div>      
+      <h1 className="fichaTitle">DETALLE DE LA RUTA</h1>      
       <div className="BrowserCardStyle">
         <Ficha ficha={ficha} />
       </div>

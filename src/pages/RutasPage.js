@@ -22,11 +22,12 @@ export default function RutasPage() {
 
   return (
     <div>
-      <h1 className="rutastitle">TODAS NUESTRAS RUTAS</h1>
-
+      <div>
+      <h1 className="rutasTitle">TODAS NUESTRAS RUTAS</h1>
+      </div>
       <div>
         <form className="formFinder">
-          <span className="spanFinder">¿Dónde te gustaría ir?</span>
+          <p className="textFinder">Buscador de rutas:</p>
           <input 
           type="text"
           placeholder="Introduce el lugar donde te gustaría ir"
@@ -36,11 +37,6 @@ export default function RutasPage() {
           onChange={event => {setRutaFiltrada(event.target.value)}}/>
         </form>
       </div>
-
-
-
-
-
 
       <div className="gridRutas">
 

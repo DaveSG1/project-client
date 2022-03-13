@@ -4,9 +4,10 @@ export default function EmpresaPage() {
 
   return (
     <div>
+      <h2 className="empresaTitle">Sobre nosotros</h2>
       <div className="headingEmpresa">
         <div className="text">
-          <h2 className="">Sobre nosotros</h2>
+          
           <span className="span">
             En los tiempos que corren, que el tiempo cada vez es más limitado,
             es un fastidio tener que estar buscando en distintas webs para
@@ -76,11 +77,11 @@ export default function EmpresaPage() {
           <p>
             Precios: • Por hora (20€) • ½ jornada (70€) • Dia completo (100€)
             (incluye picnic con bebida y almuerzo)
-          </p>
+          </p>          
           <p>
-            Los precios por persona incluyen: • Caballos tranquilos y muy
+            Los precios incluyen: • Caballos tranquilos y muy
             fiables. • Guías profesionales. •Equipamiento completo. • Grupos
-            reducidos para ofrecer una atención personalizada.
+            reducidos.
           </p>
         </div>
       </div>
