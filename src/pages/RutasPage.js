@@ -6,6 +6,7 @@ import Ruta from "../components/Ruta";
 export default function RutasPage() {
   
   const [rutas, setRutas] = useState([]); 
+  const [rutaFiltrada, setRutaFiltrada] = useState('');
 
   let URL = "http://localhost:8000/api/rides/read";
 
@@ -22,11 +23,48 @@ export default function RutasPage() {
   return (
     <div>
       <h1 className="rutastitle">TODAS NUESTRAS RUTAS</h1>
-      <div className="gridRutas">
-        {rutas?.map((ruta) => {
-          return <Ruta ruta={ruta} key={ruta.id} />;
-        })}
+
+      <div>
+        <form className="formFinder">
+          <span className="spanFinder">¿Dónde te gustaría ir?</span>
+          <input 
+          type="text"
+          placeholder="Introduce el lugar donde te gustaría ir"
+          className="inputFinder"
+          name="inputFinder"
+          autoComplete="off"
+          onChange={event => {setRutaFiltrada(event.target.value)}}/>
+        </form>
       </div>
+
+
+
+
+
+
+      <div className="gridRutas">
+
+        {rutas.filter((ruta) => {
+          if (rutaFiltrada === "") {
+            return ruta
+
+          } else if (ruta.ccaa.toLowerCase().includes(rutaFiltrada.toLowerCase().trim())) {
+            return ruta
+            
+          } else if (ruta.location.toLowerCase().includes(rutaFiltrada.toLowerCase().trim())) {
+            return ruta
+          
+          } else {
+            return false
+          }
+
+        }).map((ruta) => {
+          return <Ruta ruta={ruta} key={ruta.id} />       
+        
+        })}
+                
+      </div>
+
     </div>
-  );
+  )
 }
