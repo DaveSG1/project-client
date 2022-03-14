@@ -181,8 +181,7 @@ img.squared {
 
 .formFinder {
   flex-direction: column;
-  justify-content: start;
-  
+  justify-content: start; 
 }
 
 .textFinder {
