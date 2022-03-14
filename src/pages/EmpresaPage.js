@@ -80,8 +80,7 @@ export default function EmpresaPage() {
           </p>          
           <p>
             Los precios incluyen: • Caballos tranquilos y muy
-            fiables. • Guías profesionales. •Equipamiento completo. • Grupos
-            reducidos.
+            fiables. • Guías profesionales. •Equipamiento completo. 
           </p>
         </div>
       </div>

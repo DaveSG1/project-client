@@ -837,16 +837,15 @@ button:hover {
   }
 
   .headingEmpresa .mainImageEmpresa {
-    width: 50%;
-    height: 70%;
+    width: 400px;
+    height: 680px;
     margin-top: 3rem;
     border-radius: 5px;
   }
 
   .headingEmpresa .text {
-    width: 50%;
-    margin: 2rem;
-
+    width: 35%;
+    margin: 2rem;    
     text-align: left;
   }
 
